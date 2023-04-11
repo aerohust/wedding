@@ -1,0 +1,44 @@
+.alt-color-top + .footer:before{
+    border-left: 50vw solid #f1f1f1;
+    border-right: 50vw solid #f1f1f1;
+}
+
+.footer{
+  background: linear-gradient(to bottom right,#111217,#484d60);
+  color: #fff;
+  a:hover{
+    color: #fff;
+  }
+  
+  position: relative;
+  overflow-x: hidden;
+
+  padding-top: 0.25rem;
+}
+.footer-info{
+  color: #ddd;
+  a{
+    color: #ddd;
+  }
+}
+.footer-more{
+  color: #a2a2a2;
+  font-size: $f-size-small;
+  margin-top: 5px;
+  font-style: italic;
+  a{
+    color: #a2a2a2;
+  }
+}
+.donate-me{
+  font-weight: 700;
+  a{
+    color: $c-green;
+  }
+}
+.mission{
+  font-size: $f-size-small;
+  a{
+    color: $c-yellow-text;
+  }
+}

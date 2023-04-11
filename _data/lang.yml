@@ -1,0 +1,127 @@
+update:
+  en: "updated"
+  vn: "updated"
+mycv:
+  en: "My CV"
+  vn: "CV của Quý"
+mynote:
+  en: "My Notes"
+  vn: "Ghi chú của Quý"
+nav:
+  home:
+    en: "Home"
+    vn: "Home"
+  tutorial:
+    en: "Tutorials"
+    vn: "Toán Tin"
+  reading:
+    en: "Reading"
+    vn: "Tôi đọc"
+  sketch:
+    en: "Sketches"
+    vn: "Vẽ vời"
+  thought:
+    en: "My notes"
+    vn: "Tạp ghi"
+index:
+  intro:
+    en: Hi there! I'm Quý, a CAE engineer, a reader and an autodidact from Vietnam. I love to learn something new everyday as my favourite quote - "Try and acquire". I hope that my website can bring me closer to you.
+    vn: "Chào bạn! <span class=\"tgreen\">hay ho</span> và <span class=\"tgreen\">bổ ích</span> tôi biết được."
+  about:
+    en: "About"
+    vn: "Về tôi"
+section:
+  project:
+    en: "Recent projects"
+    vn: "Dự án gần đây"
+    more:
+      en: "see others"
+      vn: "xem tất cả"
+  reading: 
+    en: "Books I've just read"
+    vn: "Sách tôi vừa đọc"
+    more:
+      en: "see other books"
+      vn: "xem toàn bộ sách"
+  tutorial:
+    en: "Tutorials"
+    vn: "Toán học và công nghệ"
+    more:
+      en: "see full list"
+      vn: "xem đầy đủ"
+  mynote:
+    en: "My notes"
+    vn: "Ghi chú của tôi"
+    more: 
+      en: "You cannot remember everything."
+      vn: "Bạn không thể nhớ hết mọi điều."
+  sketch:
+    en: "Latest sketches"
+    vn: "Hình vẽ gần đây"
+    more:
+      en: "see other ones"
+      vn: "xem những hình khác"
+  thought:
+    more:
+      en: "see others"
+      vn: "xem thêm nhiều hơn"
+footer:
+  support_text:
+    en: "You may say I'm a dreamer, but I'm not the only one."
+    vn: "Với internet, con người có thể học được mọi thứ. Tôi muốn chia sẻ với bạn một trong những tài nguyên hữu dụng và hiệu quả nhất để bạn có thể tiết kiệm thời gian của mình trên con đường tự học hỏi."
+  support_button:
+    en: "Support Quy"
+    vn: "Ủng hộ Quý"
+  about:
+    en: "About"
+    vn: "Giới thiệu"
+contact:
+  title: 
+    en: "Give me a talk"
+    vn: "Liên hệ"
+  more: 
+    en: "looking forward to getting your idea"
+    vn: "rất mong nhận được phản hồi của bạn"
+  name:
+    en: "Your name"
+    vn: "Tên của bạn"
+  email: 
+    en: "Your email"
+    vn: "Email của bạn"
+  message: 
+    en: "What you wanna say"
+    vn: "Nội dung thư"
+  send: 
+    en: "Send it to me"
+    vn: "Gửi thư"
+search:
+  placeholder:
+    en: "Type something..."
+    vn: "Gõ từ khóa bạn cần..."
+  title: 
+    en: "Search"
+    vn: "Tìm kiếm"
+  loading:
+    en: "Loading"
+    vn: "Đang tải"
+  result:
+    en: "results"
+    vn: "kết quả"
+  for_key: 
+    en: "for the keyword"
+    vn: "cho từ khóa"
+  js:
+    show:
+      en: "Showing"
+      vn: "Hiển thị"
+    no:
+      en: "No"
+      vn: "Không có"
+social:
+  title: 
+    en: "find me on"
+    vn: "xem hoạt động của tôi trên"
+more_post:
+  title:
+    en: "You may like?"
+    vn: "Có thể bạn quan tâm?"

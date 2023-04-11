@@ -1,0 +1,42 @@
+.about-intro { margin: 4rem 0 3rem 0; color: #444; }
+
+.about-donate { padding: 2rem; border: 1px solid #bbb; background: #fff; border-radius: 10px; text-align: center; }
+.about-donate .strong { color: #0e940b; font-weight: 600; }
+
+.field-learning { margin: 2rem 0; padding: 0 1rem; }
+.field-learning img { width: 100%; transition: transform .3s; }
+.field-learning.left:hover img, .field-learning.right:hover img { transform: scale(1.1); }
+.field-learning.img-order { padding-right: 0; }
+.field-learning .img-box { border-radius: 50%; padding: 15px; }
+@media (max-width: 575px) { .field-learning .img-box { width: 200px; margin: 0 auto; } }
+.field-learning.content-box { padding: 1rem 1rem .5rem 1rem; border-radius: 7px; }
+.field-learning.link { width: 15px; border: solid 1.5px #378bcf; order: 2; -ms-flex-order: 2; }
+@media (max-width: 575px) { .field-learning.link { border-right: solid 1.5px #378bcf; height: 15px; width: 0; } }
+.field-learning.left .img-box { border-right: solid 3px #378bcf; order: 1; -ms-flex-order: 1; }
+@media (max-width: 575px) { .field-learning.left .img-box { border-bottom: solid 3px #378bcf; } }
+.field-learning.left.content-box { border-left: 3px solid #378bcf; order: 3; -ms-flex-order: 3; }
+@media (max-width: 575px) { .field-learning.left.content-box { border-top: 3px solid #378bcf; padding-right: 0; } }
+.field-learning.right.img-order { order: 3; -ms-flex-order: 3; padding-left: 0; }
+@media (max-width: 575px) { .field-learning.right.img-order { order: 1; -ms-flex-order: 1; } }
+.field-learning.right .img-box { border-left: solid 3px #378bcf; }
+@media (max-width: 575px) { .field-learning.right .img-box { border-bottom: solid 3px #378bcf; } }
+.field-learning.right.content-box { border-right: 3px solid #378bcf; order: 1; -ms-flex-order: 1; text-align: right; }
+@media (max-width: 575px) { .field-learning.right.content-box { border-top: 3px solid #378bcf; text-align: left; order: 3; -ms-flex-order: 3; padding-left: 0; } }
+.field-learning h3 { font-size: 1.5rem; font-weight: 600; color: #333; }
+@media (max-width: 575px) { .field-learning h3 { font-size: 1.3rem; } }
+.field-learning p { font-size: 1.1rem; color: #111; }
+.field-learning .detail { margin-top: -0.5rem; }
+.field-learning .detail .buttonD { font-size: 1.1rem; color: #2a79cc; padding: 0 2rem 2px 0; font-weight: 600; cursor: pointer; }
+.field-learning .detail .buttonD::before { display: inline-block; content: ' '; border-left: 7px solid transparent; border-right: 7px solid transparent; border-top: 7px solid currentColor; vertical-align: middle; margin-right: .7rem; transform: translateY(-2px); transition: transform .2s ease-out; }
+.field-learning .detail .buttonD.collapsed::before { transform: rotate(-90deg) translateX(3px); }
+.field-learning .detail .buttonD:hover { color: #0085A1; }
+.field-learning .detail .contentD { padding: 1.25rem; padding-bottom: 0; margin-left: 6px; margin-top: -10px; }
+@media (max-width: 575px) { .field-learning .detail .contentD { padding-right: 0; } }
+.field-learning .detail .contentD p:before { font-family: FontAwesome; content: "\f101"; color: #2a79cc; margin-right: 0.5rem; }
+@media (min-width: 576px) { .field-learning.right .buttonD { padding-right: 0 !important; }
+  .field-learning.right .buttonD::before { float: right; margin-right: 0; margin-left: .7rem; transform: translateY(10px); }
+  .field-learning.right .buttonD.collapsed::before { transform: rotate(90deg) translateX(3px); margin-top: 0.45rem; }
+  .field-learning.right .contentD { margin-right: 6px; }
+  .field-learning.right .contentD p:before { float: right; margin-left: 0.5rem; content: "\f100"; margin-right: 0; } }
+
+.my-learning .hr { border-bottom: 1px solid #bbb; }

@@ -1,0 +1,36 @@
+
+  .bg-home{
+    background-image: linear-gradient(160deg,#ffeead,#06060669);
+    background-color: #ffeead;
+  }
+
+  .bg-thought{
+    background-image: linear-gradient(160deg,#bd96f6,#06060669);
+    background-color: #bd96f6;
+  }
+
+  .bg-reading{
+    background-image: linear-gradient(160deg,#5eeda3,#06060669);
+    background-color: #5eeda3;
+  }
+
+  .bg-about{
+    background-image: linear-gradient(160deg,#3292f6,#06060669);
+    background-color: #3292f6;
+  }
+
+  .bg-simulation{
+    background-image: linear-gradient(160deg,#fc5d76,#06060669);
+    background-color: #fc5d76;
+  }
+
+  .bg-note{
+    background-image: linear-gradient(160deg,#fdb54b,#06060669);
+    background-color: #fdb54b;
+  }
+
+
+.bg-default{
+  background-image: linear-gradient(160deg,#3292f6,#06060669);
+  background-color: #3292f6;
+}

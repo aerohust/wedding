@@ -1,0 +1,75 @@
+// section
+.section{
+  padding: 1rem;
+}
+
+// section background
+.alt-color:nth-child(odd) {
+  padding: 1rem 10px;
+
+  @media (max-width: 575px){
+    padding-bottom: 1rem;
+  }
+
+  background: #f1f1f1;
+
+  position: relative;
+  overflow-x: hidden;
+
+}
+
+
+// only top arrow
+.alt-color-top{
+  padding: 1rem 10px 2rem 10px;
+
+  @media (max-width: 575px){
+    padding-bottom: 1rem;
+  }
+
+  background: #f1f1f1;
+
+  position: relative;
+  overflow-x: hidden;
+}
+
+
+// section title
+.sec-title{
+  margin-bottom: 1.5rem;
+  h2{
+    font-weight: $f-extra-bold;
+    color: chocolate;
+    font-size: 1.8rem;
+    @media (max-width: $s-sm){
+      font-size: 1.8rem;
+    }
+  }
+  h4{
+    font-style: italic;
+    font-weight: normal;
+    font-size: $f-size;
+  }
+}
+.sec-more{
+  color: $c-gray-text;
+  a{
+    color: $c-gray-text;
+    &:hover{
+      color: $c-gray-hover;
+    }
+  }
+}
+
+.sec-more-title{
+  h4{
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #777;
+  }
+  hr{
+    border-color: #c7c7c7;
+    width: 40%;
+    border-width: 1.2px;
+  }
+}

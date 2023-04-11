@@ -1,0 +1,35 @@
+.layout-main { overflow: hidden; position: relative; }
+.layout-main a { color: #555; }
+.layout-main .ribbon { transform: rotate(45deg); position: absolute; width: 150px; background: #2b940c; letter-spacing: 1px; color: #fff; font-size: .8rem; font-weight: 600; border-radius: 3px 0 0 3px; padding: 2px 10px; z-index: 999; text-align: center; }
+
+.element-title { font-family: 'Nunito', sans-serif; font-weight: 700; line-height: 1.3; }
+
+.alt-color:nth-child(even) .tutorial-main { background-color: #fff; border: #ddd solid 1px; }
+
+.tutorial-main { background: #f9f9f9; border: #ddd solid 1px; border-radius: 7px; transition: transform .2s; padding: 15px; width: 100%; text-align: center; }
+.tutorial-main:hover { transform: scale(1.05); box-shadow: 0 0 6px 4px #e3e3e3; }
+.tutorial-main:hover .element-title { color: #0085A1; }
+.tutorial-main:hover .element-date { color: #666; }
+.tutorial-main:hover .element-description { color: #555; }
+.tutorial-main .element-photo img { width: 100%; border-top-left-radius: calc(.25rem - 1px); border-top-right-radius: calc(.25rem - 1px); }
+.tutorial-main .element-title { font-size: 1.1rem; }
+.tutorial-main .element-date { margin-top: 5px; font-size: 0.75rem; color: #888; font-weight: 600; display: none; }
+.tutorial-main .element-description { margin-top: 10px; font-size: 0.87rem; color: #666; }
+.tutorial-main .element-subtitle { display: none; }
+.tutorial-main .ribbon { top: 18px; right: -45px; }
+
+.snippet .thought-main .element-date { display: none; }
+.snippet .thought-main .element-subtitle { display: none; }
+
+.thought-main { background: #fffcec; border: 1px solid #d8d1b0; padding: 10px; width: 100%; text-align: center; display: flex; align-items: center; }
+.thought-main a { margin: 0 auto; }
+.thought-main:hover { background: #fff3c8; }
+.thought-main:hover .element-title { color: #0085A1; }
+.thought-main:hover .element-subtitle { color: #666; }
+.thought-main:hover .element-rating { color: #ff9d00; }
+.thought-main .element-title { font-size: 1rem; }
+.thought-main .element-subtitle { font-size: 0.75rem; margin-top: 7px; }
+.thought-main .element-photo { display: none; }
+.thought-main .element-description { display: none; }
+.thought-main .element-date { font-size: 0.75rem; color: #666; margin-top: 7px; }
+.thought-main .ribbon { display: none; }

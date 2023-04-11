@@ -1,0 +1,65 @@
+---
+layout: page
+title: HOANG Kim-Quy
+subtitle: CAE Engineer, reader, writer and autodidact
+nav: about
+css:
+  - "/css/contact-form.css"
+  - "/css/post-layout.css"
+  - "/css/page.css"
+  - "/css/not-scss.css"
+  - "/css/about.css"
+js:
+  - "/js/contact-form.js"
+permalink: /about
+---
+
+<section class="section about-intro alt-color">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-7 col-md-9 text-center">
+        <p class="a-diff">
+          My name is HOANG Kim-Quy, a Vietnamese guy who has a curious mind. As an CAE engineer, I am interested in researching and sharing contents about <strong>FEM</strong>, <strong>simulation tools</strong> and <strong>some tips</strong> which are helpful to analyses. My hobbies are <a href="{{ site.baseurl }}/thought"><b>writing</b></a>, <a href="{{site.baseurl}}/reading"><b>reading</b></a> and <a href="https://photos.app.goo.gl/o8YNPjKUMP4LGsaK6"><b>cooking</b></a>.
+        </p>
+        <p class="a-diff">
+          P/s: "You may say I'm a dreamer, but I'm not the only one."
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+{% assign img-src = '/img/about/' %}
+<section class="section alt-color">
+  {% include me-social.html %}
+</section>
+
+
+<!-- more info -->
+<section class="section alt-color a-diff">
+  <div class="container">
+    {% include sec-title.html title="More information" %}
+    <div class="row align-items-center justify-content-center">
+      <div class="col-12 col-md-8 more-info">
+        <div class="item">
+			<i class="fa fa-map-marker" aria-hidden="true"></i>
+			<span class="info-title">Current</span> : Hanoi, Vietnam.
+		</div>
+		<div class="item">
+			<i class="fa fa-briefcase" aria-hidden="true"></i>
+			<span class="info-title">Current job</span> : Autodidact, reader, writer.
+		</div>
+		<div class="item">
+			<i class="fa fa-book" aria-hidden="true"></i>
+			<span class="info-title">I'm reading</span> : Bird by bird (Anne Lamott)
+		</div>
+		<div class="item">
+			<i class="fa fa-envelope" aria-hidden="true"></i>
+			<span class="info-title">Email</span> : <a href="mailto:{{site.author.email}}">{{site.author.email}}</a>
+		</div>
+      </div>
+    </div>
+  </div>
+</section>
+

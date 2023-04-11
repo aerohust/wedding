@@ -1,0 +1,6 @@
+@charset "UTF-8";
+body { counter-reset: h2counter; }
+
+.post-content > h1 { counter-reset: h2counter; }
+.post-content > h2:before { content: counter(h2counter) ".  "; counter-increment: h2counter; counter-reset: h3counter; }
+.post-content > h3:before { content: counter(h2counter) "." counter(h3counter) ".  "; counter-increment: h3counter; }

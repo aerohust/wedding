@@ -1,0 +1,32 @@
+# name used as "fa-{{name}}"
+- title: Home
+  url: /
+  icon: fa-home
+  name: home
+  color: ffeead
+- title: Thoughts
+  url: /thought
+  icon: fa-commenting-o
+  name: thought
+  color: bd96f6
+- title: Reading
+  url: /reading
+  icon: fa-book
+  name: reading
+  color: 5eeda3
+- title: Me
+  url: /about
+  icon: fa-heart-o
+  name: about
+  color: 3292f6
+- title: Simulation
+  url: /simulation
+  icon: fa-map-o
+  name: simulation
+  color: fc5d76
+- title: Notes
+  url: /note
+  icon: fa-sticky-note
+  name: note
+  color: fdb54b
+

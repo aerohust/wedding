@@ -1,0 +1,58 @@
+.me-social { margin-top: 2rem; }
+.me-social hr { width: 30%; }
+.me-social .title { font-size: 1.5rem; font-weight: 600; color: #555; }
+.me-social .item { padding: 1rem; }
+.me-social .item:hover img { transform: scale(1.1); }
+.me-social .item:hover .so-name { color: #4682b4; }
+.me-social .so-img { height: 100px; text-align: center; padding: 10px; }
+.me-social .so-img img { height: 75%; transition: transform .2s; }
+.me-social .so-name { font-size: 1.1rem; font-weight: 600; color: #555; text-align: center; margin-top: -1.5rem; }
+
+.field-header { background: #fff; border: #ddd solid 1px; border-radius: 7px; transition: transform .2s; padding: 2rem 15px 15px 15px; width: 100%; text-align: center; }
+.field-header:hover { transform: scale(1.05); box-shadow: 0 0 6px 4px #e3e3e3; }
+.field-header:hover .field-subject { color: #0085A1; }
+.field-header:hover .field-des { color: #555; }
+.field-header .field-img { width: 100px; margin: 0 auto; }
+.field-header .field-img img { width: 100%; border-top-left-radius: calc(.25rem - 1px); border-top-right-radius: calc(.25rem - 1px); }
+.field-header .field-subject { font-size: 1.2rem; font-family: 'Nunito', sans-serif; line-height: 1.3; font-weight: 600; margin-top: 1.5rem; }
+.field-header .field-des { font-size: 0.9rem; margin-top: 0.5rem; color: #888; font-weight: 400; }
+.field-header a { color: #555; }
+
+.field-body { background: #fff; padding: 1.5rem; border: 1px solid #bbb; margin: 1rem -0.5rem; position: relative; font-size: 1rem; color: #444; border-radius: 5px; box-shadow: 0 0 6px 4px #e3e3e3; }
+.field-body:before { content: ""; position: absolute; top: -31.5px; z-index: 1; border: solid 15px transparent; border-bottom-color: #bbb; }
+.field-body:after { content: ""; position: absolute; top: -30px; z-index: 1; border: solid 15px transparent; border-bottom-color: #fff; }
+.field-body .each-item { margin-bottom: 1rem; }
+.field-body .each-item:last-child { margin-bottom: 0; }
+.field-body .each-item-header { padding-left: 1.5rem; }
+.field-body .each-item-header i { margin-left: -1.5rem; }
+.field-body .each-item-header .date { font-weight: 600; }
+.field-body .each-item-body { padding-left: 1.5rem; font-size: 0.95rem; font-style: italic; opacity: .7; }
+
+@media (min-width: 768px) { #math .field-body::before, #math .field-body::after { left: 10%; }
+  #phd .field-body::before, #phd .field-body::after { left: 36%; }
+  #web-development .field-body::before, #web-development .field-body::after { left: 62%; }
+  #data .field-body::before, #data .field-body::after { left: 87.5%; } }
+@media (max-width: 767px) { #math2.collapse:not(.show), #data2.collapse:not(.show), #phd2.collapse:not(.show), #web-development2.collapse:not(.show) { display: none; }
+  #math2.collapse.show, #data2.collapse.show, #phd2.collapse.show, #web-development2.collapse.show { display: block; }
+  .collapsing, .collapse { -webkit-transition: none !important; transition: none !important; display: none; } }
+@media (max-width: 767px) { #math2 .field-body::before, #math2 .field-body::after { left: 19%; }
+  #phd2 .field-body::before, #phd2 .field-body::after { right: 19%; }
+  #web-development2 .field-body::before, #web-development2 .field-body::after { left: 19%; }
+  #data2 .field-body::before, #data2 .field-body::after { right: 19%; } }
+.mynote .description { font-size: 2rem; text-align: center; }
+.mynote .description span { font-weight: 600; color: #ec5d76; }
+.mynote .description .more { font-size: 1rem; color: #666; padding: 0 1.5rem; }
+@media (max-width: 767px) { .mynote .description { font-size: 1.5rem; }
+  .mynote .description .more { font-size: 0.9rem; } }
+.mynote .showcase { padding: 2rem; }
+.mynote .showcase img { width: 100%; box-shadow: 0 0 6px 4px #e3e3e3; border-radius: 10px; transition: transform .2s; }
+@media (max-width: 767px) { .mynote .showcase { padding: 2rem 0 1rem 0; } }
+.mynote:hover img { transform: scale(1.1); }
+.mynote:hover span { color: #c432d3; }
+.mynote:hover .more { color: #333; }
+
+.more-info { padding: 1rem; color: #555; }
+.more-info .item { margin-bottom: 0.5rem; }
+.more-info .item i { margin-right: 10px; }
+.more-info .item:last-child { margin-bottom: 0; }
+.more-info .item .info-title { font-weight: 600; }

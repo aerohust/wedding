@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  
+
+  
+    
+	<!-- Google Analytics -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-136699132-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+	<!-- End Google Analytics -->
+
+  
+  
+  <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico">
+  <meta name="author" content="" />
+
+  <title>
+    
+      Quy Bookrista | Harmonic Analysis of Structures
+    
+  </title>
+
+  
+
+  <!-- feed -->
+  <link rel="alternate" type="application/rss+xml" title="Quy Bookrista - Try & Acquire" href="/feed.xml" />
+
+  <!-- page (external) -->
+  
+
+  <!-- page (internal) -->
+  
+
+  <!-- heading numbering -->
+  
+    <link rel="stylesheet" href="/css/notnumbering.css" />
+  
+
+  <!-- layout (external) -->
+  
+    
+      
+  <link rel="stylesheet" href="//stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    
+  
+
+  <!-- layout (internal) -->
+  
+    
+      <link rel="stylesheet" href="/css/bootstrap41/bootstrap.min.css" />
+    
+      <link rel="stylesheet" href="/css/main.css" />
+    
+      <link rel="stylesheet" href="/css/header.css" />
+    
+      <link rel="stylesheet" href="/css/page.css" />
+    
+      <link rel="stylesheet" href="/css/rouge-monokai.css" />
+    
+  
+  
+    
+      <link rel="stylesheet" href="/css/post.css" />
+    
+      <link rel="stylesheet" href="/css/post-layout.css" />
+    
+      <link rel="stylesheet" href="/css/tag-page.css" />
+    
+  
+
+  <!-- layout (google font) -->
+  
+    
+      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Comfortaa" />
+    
+      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans: 400,400i,600,600i,700,700i,800&amp;subset=vietnamese" />
+    
+      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lobster&amp;subset=vietnamese" />
+    
+      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Nunito: 400,600,700&amp;subset=vietnamese" />
+    
+      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Baloo" />
+    
+  
+
+  <!-- page (google font) -->
+  
+
+    <!-- Facebook OpenGraph tags -->
+  
+    <meta property="fb:app_id" content="2125469960824092" />
+  
+
+  
+
+  
+    <meta property="og:title" content="Harmonic Analysis of Structures" />
+  
+
+  
+    <meta property="og:description" content="Ansys Mechanical">
+  
+
+
+  <meta property="og:type" content="website" />
+
+  
+    <meta property="og:url" content="http://localhost:4000/tutorial/harmonic-analysis-of-structures" />
+    <link rel="canonical" href="http://localhost:4000/tutorial/harmonic-analysis-of-structures" />
+  
+
+  <!-- page's cover -->
+  
+    <meta property="og:image" content="http://localhost:4000/img/defaultCoverPost.png" />
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1234">
+    <meta property="og:image:height" content="592">
+  
+
+  
+
+  
+
+  
+  
+    
+    
+
+    <script type="text/javascript">
+      var Titles = ["Harmonic Analysis of Structures","For the editor only","Shortcuts for Mac OS's Users","Finite-Difference Time-Domain Method"];
+      var Urls = ["/tutorial/harmonic-analysis-of-structures","/tutorial/for-the-editors-only","/tutorial/shortcut-for-mac-os","/tutorial/FDTD-PE-Model"];
+      
+      
+        var Dates = ["21 Jan 2021","18 Jan 2021","11 Jan 2019","30 Sep 2018"];
+      
+      
+        var Descriptions = ["Ansys Mechanical","Shortcuts for the editors on this site","Useful shortcuts for macbook users",""];
+      
+      
+        var Imgs = ["harmonic-analysis-of-structure.gif","admin.svg","mac-os-shortcut.jpg","fdtd-method.png"];
+      
+      
+
+      
+      
+      var Updates = ["false","false","false","false"];
+    </script>
+
+  
+
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+  
+
+</head>
+
+<body>
+  <script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '2125469960824092',
+      xfbml      : true,
+      version    : 'v3.1'
+    });
+  
+    FB.AppEvents.logPageView();
+  
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "https://connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+  <header>
+    
+<nav class="navbar navbar-dark nav-bg navbar-custom">
+  <div class="container">
+    
+    
+      
+      
+		<a class="nav-home " href="/">
+	  
+        <i class="fa fa-home" aria-hidden="true"></i>
+        <span>Home</span>
+      </a>
+    
+      
+      
+		<a class="nav-thought " href="/thought">
+	  
+        <i class="fa fa-commenting-o" aria-hidden="true"></i>
+        <span>Thoughts</span>
+      </a>
+    
+      
+      
+		<a class="nav-reading " href="/reading">
+	  
+        <i class="fa fa-book" aria-hidden="true"></i>
+        <span>Reading</span>
+      </a>
+    
+      
+      
+		<a class="nav-about " href="/about">
+	  
+        <i class="fa fa-heart-o" aria-hidden="true"></i>
+        <span>Me</span>
+      </a>
+    
+      
+      
+		<a class="nav-simulation " href="/simulation">
+	  
+        <i class="fa fa-map-o" aria-hidden="true"></i>
+        <span>Simulation</span>
+      </a>
+    
+      
+      
+		<a class="nav-note " href="/note">
+	  
+        <i class="fa fa-sticky-note" aria-hidden="true"></i>
+        <span>Notes</span>
+      </a>
+    
+    <div class="nav-search">
+        <form action="/search" method="get">
+          <input name="q" class="mr-sm-2 nav-search-input" type="search" placeholder="Search..." aria-label="Search...">
+          <button class="nav-search-submit" type="submit">
+            <i class="fa fa-search" aria-hidden="true"></i>
+          </button>
+        </form>
+      </div>
+  </div>
+</nav>
+
+  </header>
+
+  
+    
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+    <header id="post-header" class="bg-tutorial page-post-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 offset-md-2 col-12 text-center">
+            
+              <div class="text-center header-tuto-img">
+                <img src="/img/tutorial/harmonic-analysis-of-structure.gif">
+              </div>
+            
+            <h1>Harmonic Analysis of Structures</h1>
+            <h3></h3>
+            <h3 class="header-date">21 Jan 2021</h3>
+          </div>
+        </div>
+      </div>
+    </header>
+  
+
+
+
+<div class="container post-container">
+  <div class="row justify-content-center">
+    <div class="col-md-10 col-lg-8 col-12">
+      <div class="post-content mb-4">
+        <div id="toc">
+  <div class="toc-title">
+    <i class="fa fa-list-ul"></i><span>In this post</span>
+  </div>
+  <div class="toc-content">
+<ul id="markdown-toc">
+  <li><a href="#intro-to-harmonic-analysis" id="markdown-toc-intro-to-harmonic-analysis">Intro to Harmonic Analysis</a></li>
+  <li><a href="#formulation-of-harmonic-analysis" id="markdown-toc-formulation-of-harmonic-analysis">Formulation of Harmonic Analysis</a>    <ul>
+      <li><a href="#formulation" id="markdown-toc-formulation">Formulation</a></li>
+    </ul>
+  </li>
+</ul>
+
+  </div>
+</div>
+<p>This post is referred from Ansys document.</p>
+
+<h2 id="intro-to-harmonic-analysis">Intro to Harmonic Analysis</h2>
+
+<p>Forced Frequency Response or Harmonic Analysis is an important branch of linear dynamics. Linear dynamics solves the equation of motion as a frequency domain problem instead of a time domain problem.</p>
+
+<p><strong>Why it is important</strong></p>
+<ul>
+  <li>Most engineered structures will be vibration tested to verify the dynamic response.</li>
+  <li>The design may need to avoid resonance with a known excitation.</li>
+  <li>Understanding the magnitude of the vibration can prevent fatigue failure.</li>
+  <li>This is an effective way to understand the significance of the different modes.</li>
+  <li>Harmonic analysis can be used alongside physical testing (such as a shaker table with sine sweep) to correlate the models (natural frequencies and damping).</li>
+</ul>
+
+<h2 id="formulation-of-harmonic-analysis">Formulation of Harmonic Analysis</h2>
+
+<p>Harmonic analyses are used to determine the steady-state response of a structure to loads that vary sinusoidally (harmonically) with time.</p>
+
+<p>Engineers use harmonic analysis to verify a design, providing insight such as:</p>
+<ul>
+  <li>Will resonance occur, which could result in excessive motion, stress, noise and vibration?</li>
+  <li>Will the cyclically repeating load result in repetitive stress, resulting in fatigue damage and potential failure?</li>
+</ul>
+
+<h4 id="formulation">Formulation</h4>
+<ul>
+  <li>Starting with the matrix form of the governing equations of motion, let’s explore a harmonic solution to this equation.
+<script type="math/tex">\left [ M \right ]\left \{ \ddot{u} \right \} + \left [ C \right ]\left \{ \dot{u} \right \} + \left [ K \right ]\left \{ u \right \} = \left [ F \right ] \tag{1}\label{eq1}</script></li>
+  <li>The Forcing Function <script type="math/tex">\left \{ F \right \}</script> and displacement <script type="math/tex">\left \{ u \right \}</script> are of the form shown below. Recall that these can be visualized as sinusoids and simply given a value for time <script type="math/tex">\left ( t \right )</script> and circular frequency <script type="math/tex">\left ( \Omega \right )</script> we can compute the complex values of the force or displacement at each node, once we have of course solved for the unknown max values and phase shifts for each node in the model.
+<script type="math/tex">\left \{ F \right \} = \left \{ F_{max}e^{i\psi} \right \}e^{i \Omega t} \tag{2}\label{eq2}</script>
+<script type="math/tex">\left \{ u \right \} = \left \{ u_{max}e^{i\phi} \right \}e^{i \Omega t} \tag{3}\label{eq3}</script></li>
+</ul>
+
+      </div>
+      <div class="tag-list text-center">
+        
+          
+          
+          <a class="tag-chip" href="/tags/tutorial#analysis">
+            <i class="fa fa-tag"></i>
+            analysis
+          </a>
+        
+          
+          
+          <a class="tag-chip" href="/tags/tutorial#harmonic">
+            <i class="fa fa-tag"></i>
+            harmonic
+          </a>
+        
+          
+          
+          <a class="tag-chip" href="/tags/tutorial#structure">
+            <i class="fa fa-tag"></i>
+            structure
+          </a>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="my-4 py-4">
+  <div class="container post-container">
+    
+
+
+    
+    
+    
+    
+    
+    
+    <!--  
+  ** Options:
+    - title: Big title 
+    - more: description below the title 
+    - href: url of the "more" (optional)
+  ** Requirement:
+    Put above code inside a <div class="container">
+-->
+<div class="row justify-content-center">
+  <div class="col-12">
+    <div class="sec-title text-center">
+      <h2>You may like?</h2>
+      
+        <h4 class="sec-more">
+          
+            <a href="/tutorial">see full list</a>
+          
+        </h4>
+      
+    </div>
+  </div>
+</div>
+
+
+<div class="row row-eq-height justify-content-center">
+  <script type="text/javascript">
+
+    var class_col = 'col-6 col-md-4 col-lg-2 p-2';
+    var class_main = 'tutorial-main';
+    var class_photo = 'px-4 py-3';
+    var img_src = '/img/tutorial';
+
+    var randomIndexUsed = [];
+    var counter = 0;
+
+    if (Titles.length > 6){
+      var numberOfPosts = 6;
+    }else{
+      var numberOfPosts = Titles.length;
+    }
+
+    while (counter < numberOfPosts){
+      var randomIndex;
+      var ttitle;
+      var uurl, ssubtitle, ddate, ddescription, iimg, rrating, erating;
+      iimg = '';
+      ddate = '';
+      ssubtitle = '';
+      ddescription = '';
+      erating = '';
+      randomIndex = Math.floor(Math.random() * Titles.length);
+      if (randomIndexUsed.indexOf(randomIndex) == "-1"){
+        ttitle = Titles[randomIndex];
+        uurl = Urls[randomIndex];
+        
+        
+          ddate = Dates[randomIndex];
+        
+        
+          ddescription = Descriptions[randomIndex];
+        
+        
+          iimg = Imgs[randomIndex];
+        
+
+        
+        if (Updates[randomIndex] == 'true'){
+          uupdate = '<div class="ribbon">updated</div>';
+        }else{
+          uupdate = '';
+        }
+
+        
+        document.write(
+          '<div class="' + class_col + '">' +
+            '<div class="' + class_main + ' layout-main">' +
+              '<a href="' + uurl + '">' +
+                uupdate +
+                '<div class="element-photo ' + class_photo + '">' +
+                  '<img src="' + img_src + '/' + iimg + '"/>' +
+                '</div>' +
+                '<div class="element-title">' +
+                  ttitle +
+                '</div>' +
+                '<div class="element-subtitle">' +
+                  ssubtitle +
+                '</div>' +
+                '<div class="element-date">' +
+                  ddate +
+                '</div>' +
+                '<div class="element-description">' +
+                  ddescription +
+                '</div>' +
+                '<div class="element-rating">' +
+                  erating +
+                '</div>' +
+              '</a>' +
+            '</div>' +
+          '</div>'
+        );
+        randomIndexUsed.push(randomIndex);
+        counter++;
+      }
+    }
+  </script>
+</div>
+
+  </div>
+</section>
+
+
+<div  class="container post-container">
+  <div class="row justify-content-center">
+    <div class="col-md-8 col-12 my-4">
+      <div class="disqus-comments">
+        
+    <div class="comments">
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+            var disqus_shortname = 'https-hoangkimquy-com';
+            /* ensure that pages with query string get the same discussion */
+                var url_parts = window.location.href.split("?");
+                var disqus_url = url_parts[0];
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to see <a href="http://disqus.com/?ref_noscript">comments on Disqus system.</a></noscript>
+    </div>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <footer class="footer">
+    
+<div class="container">
+  <div class="row">
+    <div class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3 text-center p-4">
+      <div class="footer-info">
+        <a href="/about">Quy Bookrista</a>
+        &nbsp;&copy;&nbsp;
+        2022
+        &nbsp;&bull;&nbsp;
+        <a href="/about">About</a>
+      </div>
+    </div>
+  </div>
+</div>
+  </footer>
+
+  
+
+
+
+
+
+
+
+
+  
+	  <script src="/js/bootstrap41/jquery-3.3.1.slim.min.js"></script>
+  
+	  <script src="/js/bootstrap41/popper.min.js"></script>
+  
+	  <script src="/js/bootstrap41/bootstrap.min.js"></script>
+  
+
+
+
+  
+	  <script src="/js/backtotop.js"></script>
+  
+
+
+
+	<!-- Google Analytics -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-136699132-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+	<!-- End Google Analytics -->
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+title: Quy Bookrista
+description: Try & Acquire
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
+title-separator: "-"
+
+author:
+  name: HOANG Kim-Quy
+  github: hoangkimquy
+  facebook: jesuisQuy.Aero
+  email: hello@hoangkimquy.com
+
+
+# Build settings
+timezone: "Europe/Paris"
+markdown: kramdown
+kramdown:
+  input: GFM
+highlighter: rouge
+permalink: /:categories/:title
+# paginate: 24
+# paginate_path: "/thought/page-:num"
+
+# Facebook App ID
+# fb_app_id: ""
+
+google_analytics: UA-136699132-1
+
+fb_app_id: "2125469960824092"
+
+sass:
+  style: compact
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - CNAME
+
+plugins:
+  - jekyll-feed

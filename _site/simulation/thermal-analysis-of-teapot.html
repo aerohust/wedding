@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  
+
+  
+    
+	<!-- Google Analytics -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-136699132-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+	<!-- End Google Analytics -->
+
+  
+  
+  <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico">
+  <meta name="author" content="" />
+
+  <title>
+    
+      Quy Bookrista | Thermal analysis of teapot
+    
+  </title>
+
+  
+    <meta name="description" content="Steady State Thermal Analysis">
+  
+
+  <!-- feed -->
+  <link rel="alternate" type="application/rss+xml" title="Quy Bookrista - Try & Acquire" href="/feed.xml" />
+
+  <!-- page (external) -->
+  
+
+  <!-- page (internal) -->
+  
+
+  <!-- heading numbering -->
+  
+    <link rel="stylesheet" href="/css/notnumbering.css" />
+  
+
+  <!-- layout (external) -->
+  
+    
+      
+  <link rel="stylesheet" href="//stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    
+  
+
+  <!-- layout (internal) -->
+  
+    
+      <link rel="stylesheet" href="/css/bootstrap41/bootstrap.min.css" />
+    
+      <link rel="stylesheet" href="/css/main.css" />
+    
+      <link rel="stylesheet" href="/css/header.css" />
+    
+      <link rel="stylesheet" href="/css/page.css" />
+    
+      <link rel="stylesheet" href="/css/rouge-monokai.css" />
+    
+  
+  
+    
+      <link rel="stylesheet" href="/css/post.css" />
+    
+      <link rel="stylesheet" href="/css/post-layout.css" />
+    
+      <link rel="stylesheet" href="/css/tag-page.css" />
+    
+  
+
+  <!-- layout (google font) -->
+  
+    
+      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Comfortaa" />
+    
+      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans: 400,400i,600,600i,700,700i,800&amp;subset=vietnamese" />
+    
+      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lobster&amp;subset=vietnamese" />
+    
+      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Nunito: 400,600,700&amp;subset=vietnamese" />
+    
+      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Baloo" />
+    
+  
+
+  <!-- page (google font) -->
+  
+
+    <!-- Facebook OpenGraph tags -->
+  
+    <meta property="fb:app_id" content="2125469960824092" />
+  
+
+  
+
+  
+    <meta property="og:title" content="Thermal analysis of teapot" />
+  
+
+  
+    <meta property="og:description" content="Steady State Thermal Analysis">
+  
+
+
+  <meta property="og:type" content="website" />
+
+  
+    <meta property="og:url" content="http://localhost:4000/simulation/thermal-analysis-of-teapot" />
+    <link rel="canonical" href="http://localhost:4000/simulation/thermal-analysis-of-teapot" />
+  
+
+  <!-- page's cover -->
+  
+    <meta property="og:image" content="http://localhost:4000/img/defaultCoverPost.png" />
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1234">
+    <meta property="og:image:height" content="592">
+  
+
+  
+
+  
+
+  
+  
+    
+    
+
+    <script type="text/javascript">
+      var Titles = ["Thermal analysis of teapot"];
+      var Urls = ["/simulation/thermal-analysis-of-teapot"];
+      
+        var Subtitles = ["Steady State Thermal Analysis"];
+      
+      
+        var Dates = ["01 Feb 2021"];
+      
+      
+      
+        var Imgs = ["teapot.png"];
+      
+      
+
+      
+      
+      var Updates = ["false"];
+    </script>
+
+  
+
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+  
+
+</head>
+
+<body>
+  <script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '2125469960824092',
+      xfbml      : true,
+      version    : 'v3.1'
+    });
+  
+    FB.AppEvents.logPageView();
+  
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "https://connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+  <header>
+    
+<nav class="navbar navbar-dark nav-bg navbar-custom">
+  <div class="container">
+    
+    
+      
+      
+		<a class="nav-home " href="/">
+	  
+        <i class="fa fa-home" aria-hidden="true"></i>
+        <span>Home</span>
+      </a>
+    
+      
+      
+		<a class="nav-thought " href="/thought">
+	  
+        <i class="fa fa-commenting-o" aria-hidden="true"></i>
+        <span>Thoughts</span>
+      </a>
+    
+      
+      
+		<a class="nav-reading " href="/reading">
+	  
+        <i class="fa fa-book" aria-hidden="true"></i>
+        <span>Reading</span>
+      </a>
+    
+      
+      
+		<a class="nav-about " href="/about">
+	  
+        <i class="fa fa-heart-o" aria-hidden="true"></i>
+        <span>Me</span>
+      </a>
+    
+      
+      
+		<a class="nav-simulation " href="/simulation">
+	  
+        <i class="fa fa-map-o" aria-hidden="true"></i>
+        <span>Simulation</span>
+      </a>
+    
+      
+      
+		<a class="nav-note " href="/note">
+	  
+        <i class="fa fa-sticky-note" aria-hidden="true"></i>
+        <span>Notes</span>
+      </a>
+    
+    <div class="nav-search">
+        <form action="/search" method="get">
+          <input name="q" class="mr-sm-2 nav-search-input" type="search" placeholder="Search..." aria-label="Search...">
+          <button class="nav-search-submit" type="submit">
+            <i class="fa fa-search" aria-hidden="true"></i>
+          </button>
+        </form>
+      </div>
+  </div>
+</nav>
+
+  </header>
+
+  
+    
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+    <header id="post-header" class="bg-simulation page-post-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 offset-md-2 col-12 text-center">
+            
+            <h1>Thermal analysis of teapot</h1>
+            <h3>Steady State Thermal Analysis</h3>
+            <h3 class="header-date">01 Feb 2021</h3>
+          </div>
+        </div>
+      </div>
+    </header>
+  
+
+
+
+<div class="container post-container">
+  <div class="row justify-content-center">
+    <div class="col-md-10 col-lg-8 col-12">
+      <div class="post-content mb-4">
+        <div class="alert alert-success" role="alert">
+  <p>This example is reproduced from <a href="https://www.ansys.com/"><strong>ANSYS</strong></a>.</p>
+</div>
+
+<h2 id="overview">Overview</h2>
+<p>In this example we intend to perform thermal analysis of a tea pot and indicate the temperature distribution in a steady state and transient analysis for steel material and for porcelain material.</p>
+
+<h2 id="goal">Goal</h2>
+<p>To perform steady state and transient thermal analysis for steel and porcelain tea pot.</p>
+
+<h2 id="modeling-steps">Modeling Steps</h2>
+<p><strong>1.</strong> Open Ansys workbench, create a “Steady State Thermal System” system</p>
+
+<p><strong>2.</strong> Define material property for the parts. Steel and Porcelain are used here just for demonstration purpose, but proper material property should be used.</p>
+
+<p><strong>3.</strong> Import model and suppress half-symmetric portion of the model. After suppressing the half portion, the model will look like as indicated in Figure 1.</p>
+
+<div class="img-full-50">
+  <img src="/img/post/simulation/teapot/teapot-1.png" alt="Hình: Figure 1. Cross-Section view of Tea-Pot Main Body and Lid" />
+  <em>Figure 1. Cross-Section view of Tea-Pot Main Body and Lid</em>  
+</div>
+
+<p><strong>4.</strong> Assign material to geometry. First analysis will be performed for porcelain material.</p>
+
+<p><strong>5.</strong> Thermal contacts generated by default between the main body and lid is used in the analysis.</p>
+
+<p><strong>6.</strong> Apply relevant thermal boundary conditions on the model as indicated in Figure 2. The tea is assumed to be at 100 0C in the teapot.</p>
+
+<div class="img-full-normal">
+  <img src="/img/post/simulation/teapot/teapot-2.png" alt="Hình: Figure 2. Convection, Temperature and Radiation Boundary Conditions" />
+  <em>Figure 2. Convection, Temperature and Radiation Boundary Conditions</em>  
+</div>
+
+<p><strong>7.</strong> Mesh the model with a linear mesh and solve the analysis. The temperature distribution looks like as indicated in Figure 3.</p>
+
+<div class="img-full-normal">
+  <img src="/img/post/simulation/teapot/teapot-3.png" alt="Hình: Figure 3. Temperature Distribution" />
+  <em>Figure 3. Temperature Distribution</em>  
+</div>
+
+<p><strong>8.</strong> One can plot the vector graph of heat flux for the teapot as indicated in Figure 4.</p>
+
+<div class="img-full-50">
+  <img src="/img/post/simulation/teapot/teapot-4.png" alt="Hình: Figure 4. Heat Flux showing conduction, convection and radiation heat transfer" />
+  <em>Figure 4. Heat Flux showing conduction, convection and radiation heat transfer</em>  
+</div>
+
+<p><strong>9.</strong> Now change the material to steel and repeat the steps 4 to 8 for this material.</p>
+
+<p><strong>10.</strong> Perform a transient analysis. The steps indicated above remains the same only with change that the analysis is solved for 100s and the temperature drops during this time from 1000 C to ambient temperature of 220 C.</p>
+
+<p><strong>11.</strong> Mesh the model, define substep and solve the model. The temperature distribution for Porcelain material looks like as indicated in Figure 5.</p>
+
+<div class="img-full-50">
+  <img src="/img/post/simulation/teapot/teapot-5.png" alt="Hình: Figure 5. Temperature Distribution" />
+  <em>Figure 5. Temperature Distribution</em>  
+</div>
+
+<p><strong>12.</strong> Similarly, perform the transient analysis for the steel material.</p>
+
+<h2 id="summary">Summary</h2>
+<p>Summarize the results succinctly and tie them closely with the modeling goals outlined above.</p>
+
+      </div>
+      <div class="tag-list text-center">
+        
+          
+          
+          <a class="tag-chip" href="/tags/simulation#simulation">
+            <i class="fa fa-tag"></i>
+            simulation
+          </a>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="my-4 py-4">
+  <div class="container post-container">
+    
+
+
+    
+    
+    
+    
+    <!--  
+  ** Options:
+    - title: Big title 
+    - more: description below the title 
+    - href: url of the "more" (optional)
+  ** Requirement:
+    Put above code inside a <div class="container">
+-->
+<div class="row justify-content-center">
+  <div class="col-12">
+    <div class="sec-title text-center">
+      <h2>You may like?</h2>
+      
+    </div>
+  </div>
+</div>
+  
+
+<div class="row row-eq-height justify-content-center">
+  <script type="text/javascript">
+
+    var class_col = 'col-6 col-sm-4 col-md-3 text-center mb-3';
+    var class_main = 'thought2-main text-center';
+    var class_photo = '';
+    var img_src = '/img/simulation';
+
+    var randomIndexUsed = [];
+    var counter = 0;
+
+    if (Titles.length > 4){
+      var numberOfPosts = 4;
+    }else{
+      var numberOfPosts = Titles.length;
+    }
+
+    while (counter < numberOfPosts){
+      var randomIndex;
+      var ttitle;
+      var uurl, ssubtitle, ddate, ddescription, iimg, rrating, erating;
+      iimg = '';
+      ddate = '';
+      ssubtitle = '';
+      ddescription = '';
+      erating = '';
+      randomIndex = Math.floor(Math.random() * Titles.length);
+      if (randomIndexUsed.indexOf(randomIndex) == "-1"){
+        ttitle = Titles[randomIndex];
+        uurl = Urls[randomIndex];
+        
+          ssubtitle = Subtitles[randomIndex];
+        
+        
+          ddate = Dates[randomIndex];
+        
+        
+        
+          iimg = Imgs[randomIndex];
+        
+
+        
+        if (Updates[randomIndex] == 'true'){
+          uupdate = '<div class="ribbon">updated</div>';
+        }else{
+          uupdate = '';
+        }
+
+        
+        document.write(
+          '<div class="' + class_col + '">' +
+            '<div class="' + class_main + ' layout-main">' +
+              '<a href="' + uurl + '">' +
+                uupdate +
+                '<div class="element-photo ' + class_photo + '">' +
+                  '<img src="' + img_src + '/' + iimg + '"/>' +
+                '</div>' +
+                '<div class="element-title">' +
+                  ttitle +
+                '</div>' +
+                '<div class="element-subtitle">' +
+                  ssubtitle +
+                '</div>' +
+                '<div class="element-date">' +
+                  ddate +
+                '</div>' +
+                '<div class="element-description">' +
+                  ddescription +
+                '</div>' +
+                '<div class="element-rating">' +
+                  erating +
+                '</div>' +
+              '</a>' +
+            '</div>' +
+          '</div>'
+        );
+        randomIndexUsed.push(randomIndex);
+        counter++;
+      }
+    }
+  </script>
+</div>
+
+  </div>
+</section>
+
+
+<div  class="container post-container">
+  <div class="row justify-content-center">
+    <div class="col-md-8 col-12 my-4">
+      <div class="disqus-comments">
+        
+    <div class="comments">
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+            var disqus_shortname = 'https-hoangkimquy-com';
+            /* ensure that pages with query string get the same discussion */
+                var url_parts = window.location.href.split("?");
+                var disqus_url = url_parts[0];
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to see <a href="http://disqus.com/?ref_noscript">comments on Disqus system.</a></noscript>
+    </div>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <footer class="footer">
+    
+<div class="container">
+  <div class="row">
+    <div class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3 text-center p-4">
+      <div class="footer-info">
+        <a href="/about">Quy Bookrista</a>
+        &nbsp;&copy;&nbsp;
+        2022
+        &nbsp;&bull;&nbsp;
+        <a href="/about">About</a>
+      </div>
+    </div>
+  </div>
+</div>
+  </footer>
+
+  
+
+
+
+
+
+
+
+
+  
+	  <script src="/js/bootstrap41/jquery-3.3.1.slim.min.js"></script>
+  
+	  <script src="/js/bootstrap41/popper.min.js"></script>
+  
+	  <script src="/js/bootstrap41/bootstrap.min.js"></script>
+  
+
+
+
+  
+	  <script src="/js/backtotop.js"></script>
+  
+
+
+
+	<!-- Google Analytics -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-136699132-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+	<!-- End Google Analytics -->
+
+</body>
+</html>

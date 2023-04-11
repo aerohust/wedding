@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  
+
+  
+    
+	<!-- Google Analytics -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-136699132-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+	<!-- End Google Analytics -->
+
+  
+  
+  <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico">
+  <meta name="author" content="" />
+
+  <title>
+    
+      Quy Bookrista | 
+    
+  </title>
+
+  
+
+  <!-- feed -->
+  <link rel="alternate" type="application/rss+xml" title="Quy Bookrista - Try & Acquire" href="/feed.xml" />
+
+  <!-- page (external) -->
+  
+
+  <!-- page (internal) -->
+  
+    
+      <link rel="stylesheet" href="/css/search.css" />
+    
+  
+
+  <!-- heading numbering -->
+  
+    <link rel="stylesheet" href="/css/notnumbering.css" />
+  
+
+  <!-- layout (external) -->
+  
+    
+      
+  <link rel="stylesheet" href="//stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    
+  
+
+  <!-- layout (internal) -->
+  
+    
+      <link rel="stylesheet" href="/css/bootstrap41/bootstrap.min.css" />
+    
+      <link rel="stylesheet" href="/css/main.css" />
+    
+      <link rel="stylesheet" href="/css/header.css" />
+    
+      <link rel="stylesheet" href="/css/page.css" />
+    
+      <link rel="stylesheet" href="/css/rouge-monokai.css" />
+    
+  
+  
+
+  <!-- layout (google font) -->
+  
+    
+      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Comfortaa" />
+    
+      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans: 400,400i,600,600i,700,700i,800&amp;subset=vietnamese" />
+    
+      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lobster&amp;subset=vietnamese" />
+    
+      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Nunito: 400,600,700&amp;subset=vietnamese" />
+    
+      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Baloo" />
+    
+  
+
+  <!-- page (google font) -->
+  
+
+    <!-- Facebook OpenGraph tags -->
+  
+    <meta property="fb:app_id" content="2125469960824092" />
+  
+
+  
+
+  
+    <meta property="og:title" content="Quy Bookrista" />
+  
+
+  
+    <meta property="og:description" content="{% include header.html type=&quot;search&quot; %} {% if site.data.setting.lang.current == &quot;en&quot; %} {% assign re_loading = site.data.lang['search'].loading.en %} {% assign re_result = site.data.lang['search'].result.en %} {% assign re_forkey = site.data.lang['search'].for_key.en %} {% else %} {% assign re_loading = site.data.lang['search'].loading.vn %} {% assign re_result = site.data.lang['search'].result.vn %} {% assign re_forkey = site.data.lang['search'].for_key.vn %}...">
+  
+
+
+  <meta property="og:type" content="website" />
+
+  
+    <meta property="og:url" content="http://localhost:4000/search" />
+    <link rel="canonical" href="http://localhost:4000/search" />
+  
+
+  <!-- page's cover -->
+  
+    <meta property="og:image" content="http://localhost:4000/img/defaultCoverPost.png" />
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1234">
+    <meta property="og:image:height" content="592">
+  
+
+  
+
+  
+
+  
+
+  
+
+</head>
+
+<body>
+  <script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '2125469960824092',
+      xfbml      : true,
+      version    : 'v3.1'
+    });
+  
+    FB.AppEvents.logPageView();
+  
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "https://connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+  <header>
+    
+<nav class="navbar navbar-dark nav-bg navbar-custom">
+  <div class="container">
+    
+    
+      
+      
+		<a class="nav-home " href="/">
+	  
+        <i class="fa fa-home" aria-hidden="true"></i>
+        <span>Home</span>
+      </a>
+    
+      
+      
+		<a class="nav-thought " href="/thought">
+	  
+        <i class="fa fa-commenting-o" aria-hidden="true"></i>
+        <span>Thoughts</span>
+      </a>
+    
+      
+      
+		<a class="nav-reading " href="/reading">
+	  
+        <i class="fa fa-book" aria-hidden="true"></i>
+        <span>Reading</span>
+      </a>
+    
+      
+      
+		<a class="nav-about " href="/about">
+	  
+        <i class="fa fa-heart-o" aria-hidden="true"></i>
+        <span>Me</span>
+      </a>
+    
+      
+      
+		<a class="nav-simulation " href="/simulation">
+	  
+        <i class="fa fa-map-o" aria-hidden="true"></i>
+        <span>Simulation</span>
+      </a>
+    
+      
+      
+		<a class="nav-note " href="/note">
+	  
+        <i class="fa fa-sticky-note" aria-hidden="true"></i>
+        <span>Notes</span>
+      </a>
+    
+    <div class="nav-search">
+        <form action="/search" method="get">
+          <input name="q" class="mr-sm-2 nav-search-input" type="search" placeholder="Search..." aria-label="Search...">
+          <button class="nav-search-submit" type="submit">
+            <i class="fa fa-search" aria-hidden="true"></i>
+          </button>
+        </form>
+      </div>
+  </div>
+</nav>
+
+  </header>
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+    
+    <header id="page-header" class="bg-default page-post-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 offset-md-2 col-12 text-center">
+            <h1 class="mb-3">Search</h1>
+            
+<div class="search-div">
+    <form action="/search" method="get">
+        <input class="search-input" type="search" name="q"  placeholder="Type something..." autofocus>
+        <button class="search-submit" type="submit">
+            <i class="fa fa-search" aria-hidden="true"></i>
+        </button>
+    </form>
+</div>
+
+          </div>
+        </div>
+      </div>
+    </header>
+  
+
+
+
+
+<div class="container">
+	<div class="row justify-content-center mt-4 mb-4">
+		<div class="col-12 col-md-10">
+			<p class="result-title">
+				<span id="search-process">Loading</span> results <span id="search-query-container" style="display: none;">for the keyword "<strong id="search-query"></strong>"</span>
+			</p>
+			<ul id="search-results"></ul>
+		</div>
+	</div>
+</div>
+
+<script>
+	window.data = {
+		
+			
+				
+					
+					
+					"reading-nhung-nga-tu-va-nhung-cot-den": {
+						"id": "reading-nhung-nga-tu-va-nhung-cot-den",
+						"title": "Những ngã tư và những cột đèn",
+						"categories": "reading",
+						"tags": "fiction",
+						"url": " /reading/nhung-nga-tu-va-nhung-cot-den",
+						"content": "Information\n\n\n  Version I read: Vietnamese\n  Title in Vietnamese: Những ngã tư và những cột đèn\n  Genre: Tiểu thuyết\n  Author: Trần Dần\n  Published: Hội nhà văn\n\n\n\nBelow comments are in Vietnamese, please wait for an English version. \n\nĐây là cuốn sách mà mình đã để trong danh sách chờ từ rất lâu. Nhân dịp Nhã Nam tái bản nó, mình đã quyết định đọc nó ngay và luôn. Mình không muốn nói quá nhiều về nội dung của cuốn sách, nhưng có một điều mình rất thích trong cuốn sách này đó chính là dòng tâm lý nhân vật được Trần Dần khắc họa một cách vô cùng tinh tế và sâu sắc. Cái kết mình cũng đã đoán được phần nào, nhưng quả thực cách kể chuyện của tác giả khiến mình bị lôi cuốn. Cuốn sách này mình tin là cũng sẽ có nhiều độc giả thích, đặc biệt là những độc giả lớn tuổi.\n\nHighlights I like (in Vietnamese)\n\n    \n      (update later)"
+					}
+					
+				
+			
+		
+			
+				
+					,
+					
+					"reading-bien-nhua-song-loi-nguyen": {
+						"id": "reading-bien-nhua-song-loi-nguyen",
+						"title": "Biển nhựa sống - Lời nguyền",
+						"categories": "reading",
+						"tags": "fantasy",
+						"url": " /reading/bien-nhua-song-loi-nguyen",
+						"content": "Information\n\n\n  Version I read: Vietnamese\n  Title in Vietnamese: Biển nhựa sống - Lời nguyền\n  Genre: Tiểu thuyết giả tưởng\n  Author: Lê Xuân Khoa\n  Published: Nhà xuất bản Thế giới\n\n\n\nBelow comments are in Vietnamese, please wait for an English version. \n\n“Biển nhựa sống – Lời nguyền” là cuốn sách thứ ba của nhà văn Lê Xuân Khoa. Ba cuốn sách với ba thể loại, ba lối viết khác nhau đã chứng tỏ anh là một người viết có tâm hồn rất phong phú. Là một độc giả nhưng cũng là một người bạn của anh, nên mình cũng có những cảm nhận rất riêng về cuốn sách.\n\n\n  \n  Cuốn sách tác giả dành tặng mình  \n\n\nVẫn là một lối dẫn dắt nhẹ nhàng, nhưng với những nút thắt và cái kết của câu chuyện khiến mình liên tưởng đến tiểu thuyết gia nối tiếng Guillaume Musso. Âm nhạc là chất liệu tuyệt vời xuyên suốt trong toàn bộ tiểu thuyết. Và nếu ai biết anh ở ngoài đời thì điều này sẽ không quá bất ngờ. Bên cạnh đó, dưới góc nhìn của một kẻ mộng mơ, mình cảm nhận được sự tươi đẹp của cuộc sống từ những khung cảnh tưởng tượng nhưng rất đỗi chân thật trong cuốn sách. Để rồi, dù ở trong bất kỳ hình dạng hay trạng thái nào thì bao trùm cuộc sống vẫn là một “biển nhựa sống” với thiện - ác, xấu - đẹp, hạnh phúc - khổ đau mà chúng ta đều phải trải qua.\n\nMột chi tiết nhỏ nhưng vẫn tạo cho cá nhân mình một sự thích thú, đó là anh chàng Trường Kỷ - Củ Đậu, nhân vật chính trong tiểu thuyết đầu tay của anh vẫn được xuất hiện trong cuốn sách này. (À nếu bạn quan tâm cuốn sách đầu tay của anh ấy thì hãy tìm đọc “Lá rơi trong thành phố” nhé.)\n\nTrong một lần nói chuyện với anh, mình có chia sẻ một vài điều chưa ưng lắm về cuốn sách này. Mình mong cuốn sách này sẽ có một cái bìa ấn tượng hơn, một font chữ đẹp hơn. Cùng với đó là hình ảnh phác thảo những nhân vật độc đáo nhưng không kém phần duyên dáng trong cuốn sách. Và nếu có một chiếc bản đồ cho vùng đất mà anh tạo ra trong cuốn sách thì quả thật tuyệt vời. “Giá như em có năng khiếu vẽ thì chắc chắn em sẽ vẽ một tấm bản đồ thật đẹp cho câu chuyện này rồi”, mình đã nói với anh như vậy. Vậy nên, mình rất mong chờ lần tái bản đẹp hơn của tiểu thuyết này.\n\nBạn thấy đấy, mình không muốn nói quá nhiều về nội dung của cuốn sách này. Bởi đó sẽ là thế giới mà bạn sẽ bước vào và cảm nhận khi cầm cuốn sách này trên tay. Đối với trẻ nhỏ, cuốn sách sẽ là một chuyến phiêu lưu đầy kỳ thú. Còn đối với “trẻ lớn” như mình, trước những va vấp của công việc và cuộc sống thì mình vẫn cảm nhận được sự bình yên trong tâm hồn khi lạc vào thế giới nhỏ bé của cuốn sách.\n\nVậy đấy, dù cho những cảm nhận này là của riêng mình, nhưng mình tin rằng bạn cũng sẽ cảm thấy thật thoải mái khi dạo bước trong thế giới đầy sống động của cuốn sách được bao trùm bởi biển nhựa sống. Để rồi mỉm cười khi lời nguyền được hóa giải, và bình yên cảm nhận những điều dù nhỏ thôi nhưng cũng đầy thú vị trong cuộc sống này.\n\n\n\n\n  \n  Cuốn sách tác giả dành tặng CFS Robooksta.  \n\n\nCũng phải nói thêm, đây là cuốn sách đặc biệt vì nó là món quà mà anh Khoa đã gửi đến CFS Robooksta nhân dịp sự kiện có lẽ là cuối cùng mình tham gia với vai trò là người tổ chức ở Hà Nội: “CFS HN #9: Lá rơi trong thành phố”.\n\n\nHighlights I like (in Vietnamese)\n\n    \n      (update later)"
+					}
+					
+				
+			
+		
+			
+				
+					,
+					
+					"reading-hen-ho-voi-paris": {
+						"id": "reading-hen-ho-voi-paris",
+						"title": "Hẹn hò với Paris",
+						"categories": "reading",
+						"tags": "short story",
+						"url": " /reading/hen-ho-voi-paris",
+						"content": "Information\n\n\n  Title in Vietnamese: Hẹn hò với Paris\n  Genre: Tản văn\n  Author: Trương Anh Ngọc\n  Published: Nhà xuất bản Hà Nội\n\n\n\nBelow comments are in Vietnamese, please wait for an English version.\n\nHẹn hò với Paris là cuốn sách về du ký thứ tư từ nhà văn, phóng viên Trương Anh Ngọc. Vẫn lãng mạn, nhưng sâu lắng và thấm đẫm chất sống lạc quan, yêu đời, một lần nữa Trương Anh Ngọc lại cuốn độc giả vào những hành trình mới của anh với cuốn du ký đầy cảm xúc, dữ liệu và năng lượng này. Dưới ngòi bút anh viết, nước Pháp hiện lên đầy mơ mộng và lãng mạn, Brazil với những mảng tương phản mạnh mẽ, những thành phố, làng mạc và cánh đồng châu Âu cùng những nét văn hóa, lịch sử và con người được thể hiện một cách sống động, chân thực và đáng yêu. Mời bạn hãy bước vào cuộc hành trình qua những vùng đất, thành phố châu Âu, khám phá những nét văn hóa, con người và lịch sử theo cách đi của một người lữ hành say sưa với những chuyến đi khắp bốn phương trời.\n\nHighlights I like (in Vietnamese)\n\n    \n      Có phải bởi vì người ta càng đau khổ thì càng yêu mạnh mẽ, yêu điên cuồng, và tình yêu ấy, khi không được đền đáp, sẽ biến thành một nỗi sầu thảm bi ai, nhưng trên hết vẫn toát lên niềm yêu cuộc sống và lứa đôi thiết tha?"
+					}
+					
+				
+			
+		
+			
+				
+					,
+					
+					"thought-ga-sach-bui": {
+						"id": "thought-ga-sach-bui",
+						"title": "Ga sách bụi",
+						"categories": "thought",
+						"tags": "feeling, haiphong, love, memoirs",
+						"url": " /thought/ga-sach-bui",
+						"content": "Tháng 6 năm 2016, thành phố hoa phượng đỏ…\n\n“Đó là tiệm sách nhỏ trên đường Cát Dài, nằm trên tầng hai của một căn nhà đã cũ. Ở dưới tầng một, người ta trưng bày bộ sưu tập máy ảnh độc đáo kết hợp cùng quán café. Tiệm sách có vẻ hơi vừa bộn, bởi đi đến đâu, ta đều có thể nhỡ chân chạm phải cuốn sách nào đó.\n\nChị chủ quán với mái tóc bù xù chào mình bằng một nụ cười rạng rỡ. Mình hỏi chị về cuốn sách cũ mình đang cần nhưng đáng tiếc thay, nó vừa bị bán đi mất. Quả thực, việc tìm những sách cũ là một điều thú vị nhưng cũng không kém phần gian nan. Chị chủ quán tâm sự: “Chị tiếp quản cái tiệm sách này cũng được 6 tháng rồi. Chủ yếu là vì niềm đam mê với sách và công việc nghiên cứu thôi. Mọi người nếu muốn đều có thể đến đây đọc sách miễn phí, nếu thích thì có thể mua. Tiệm sách này cũng giúp chị có thể tiếp xúc với những người có cùng đam mê và sở thích với mình hằng ngày.” Nghe chị nói xong, cái ước mơ có được một thư viện sách của riêng mình trong tôi lại nổi dậy. Rồi hai chị em lại miên man nói về những cuốn sách mình đang đọc. Ôi! Nhìn cái cách chị nói về niềm đam mê của mình, trông duyên đến lạ kì.\n\nSáng nay, một người bạn của chị đến chơi và trông tiệm cùng chị. Anh bảo với tôi rằng anh cũng học Bách Khoa, hơn tôi 3 tuổi, học cơ khí chế tạo máy. Nhưng công việc của anh bây giờ lại là làm tẩu, một công việc đòi hỏi sự khéo léo và kiên trì. Anh nói thêm: “Anh thấy mình có duyên với tẩu và có đam mê với công việc này. Ở Việt Nam, người ta chưa thực sự quan tâm nhiều đến việc làm tẩu này đâu. Nên anh cũng chỉ đặt hàng theo đơn hàng của khách nước ngoài là nhiều. Bình thường thì anh làm bằng máy, nhưng nhiều lúc rảnh rỗi, chỉ cần một con dao và một cục gỗ, cũng có thể làm anh say sưa cả buổi rồi.”\n\nCòn về phần tôi, những câu hỏi cũ lại xuất hiện trong đầu, “ừ, rốt cuộc thì mày muốn trở thành ai nào? Một người bán sách, một kỹ sư hay một kẻ ẩn dật?…”\n\nĐó là những điều mà tôi đã ghi lại cách đây hơn 5 năm. Giữa đợt dịch Covid mới làm cả thành phố Hồ Chí Minh và Hà Nội “ốm” nặng, đọc lại những dòng ấy, tôi lại thèm biết bao những tháng ngày được vi vu đây đó. Hơn tháng nay, đầu óc tôi chỉ quẩn quanh với những con số khiến cho con chữ trong tôi ghen tị. Ừ, nó ghen tị nhiều quá đến mức phát cáu. Vậy nên, những dòng này mới được viết ra.\n\nTôi không nhớ lần cuối mình nghĩ về việc thực hiện ước mơ mở một tiệm sách là khi nào. Nhưng có lẽ là rất lâu rồi. Ngẫm lại thấy sao mà nhanh quá, mình đã đi qua một phần ba cuộc đời rồi ư? Nhìn chung quanh, mọi người đều chạy thật nhanh, còn mình thì vẫn cứ như một chiếc xe lu, lầm lì và chậm chạp.\n\nTôi cũng không nhớ lần cuối mình dành cả cuối tuần để đọc một cuốn tiểu thuyết là khi nào. Nhưng tôi biết rằng cái cảm giác thích thú ấy giờ nằm gọn trong ký ức, chỉ đang chờ trực để vươn lên.\n\nVà tôi đã chẳng nhớ lần cuối mình mơ mộng trở thành một người viết là khi nào. Nhưng tôi biết rằng tập truyện ngắn dang dở trong máy vẫn chờ ngày tôi ghé thăm…\n\nP/s. Chưa bao giờ mình thấy bí bách trong việc dùng từ như thế này? Phải chăng con số đã lấn át hết phần của con chữ?"
+					}
+					
+				
+			
+		
+			
+				
+					,
+					
+					"reading-ha-noi-bao-the-la-thuong": {
+						"id": "reading-ha-noi-bao-the-la-thuong",
+						"title": "Hà Nội bảo thế là thường",
+						"categories": "reading",
+						"tags": "short story",
+						"url": " /reading/ha-noi-bao-the-la-thuong",
+						"content": "Information\n\n\n  Title in Vietnamese: Hà Nội bảo thế là thường\n  Genre: Tản văn\n  Author: Nguyễn Trương Quý\n  Published: Nhã Nam &amp; Nhà xuất bản hội nhà văn\n\n\n\nBelow comments are in Vietnamese, please wait for an English version.\n\n“Cuốn sách này là những suy tư xoay quanh câu chuyện về vài món ăn, cách phục sức hay tâm tình của con người đô thị Hà Nội, như những câu chuyện bên chén trà ngoài quán nhỏ hay mâm cơm trong gia đình. Có khi là chuyện bộ com lê thời thuộc địa khiến ai nấy mặc vào ăn ảnh, có khi là chuyện một bài ca cứ nhắc ta nhớ mãi một chiếc thắt lưng xanh.”\n\nQuả thực, mình không có được cái cảm giác như mong đợi ban đầu khi đọc cuốn sách này. Chỉ có một vài câu chuyện về các món ăn, cách ăn mặc khiến mình cảm thấy hứng thú. Có lẽ do mình ở một thế hệ cách xa so với tác giả và so với cái thời kỳ mà tác giả nhắc tới. Thêm một điều nữa, hiểu biết của mình về Hà Nội xưa và nay là quá ít để có thể hiểu hết những gì tác giả mong muốn truyền tải.\n\nCuốn sách được đánh giá 3 sao không có nghĩa là nó không hay. Nó chỉ mang ý nghĩa rằng cuốn sách chưa thoả mãn được cảm xúc của mình. Chắc chắn rằng mình sẽ đọc lại nó ở một thời điểm khác trong tương lai.\n\nHighlights I like (in Vietnamese)\n\n    \n      Có thể những món ăn không tái tạo được ở bên ngoài biên giới địa lý, không đem lại lợi nhuận “xuyên quốc gia” nhưng chúng làm nên phần hồn riêng biệt của từng vùng đất.\n    \n\n    \n      Khi người ta sống lãng mạn, đám bụi ven đường cũng ánh lên màu hồng lãng mạn.\n    \n\n    \n      Các dữ kiện văn hoá đã gieo cấy vào tôi đủ lâu (và khá linh tinh) để đến giờ tôi chắc chắn rằng bất cứ khoảnh khắc cài cúc áo hay duyệt lại mình trong gương đều thấm một suy tư về “cái tôi” khi bước ra đường."
+					}
+					
+				
+			
+		
+			
+				
+					,
+					
+					"reading-canh-dong-bat-tan": {
+						"id": "reading-canh-dong-bat-tan",
+						"title": "Cánh đồng bất tận",
+						"categories": "reading",
+						"tags": "short story",
+						"url": " /reading/canh-dong-bat-tan",
+						"content": "Information\n\n\n  Title in Vietnamese: Cánh đồng bất tận\n  Genre: Tập truyện ngắn\n  Author: Nguyễn Ngọc Tư\n  Published: Nhà xuất bản trẻ\n\n\n\nBelow comments are in Vietnamese, please wait for an English version.\n\nMột cuốn sách mình đã biết đến từ lâu nhưng đến tận bây giờ mới có cơ hội để đọc nó (Cảm ơn chị Chi đã tặng em quyển sách rất hay này).\n\nGiọng văn của Nguyễn Ngọc Tư buồn mà thương đến kì lạ. Cảm giác của mình khi đọc xong mỗi câu chuyện là một sự nhói đau. Từ “Cải ơi!” cho đến “Thương quá rau răm”, rồi đến “Hiu hiu gió bấc” hay “Huệ lấy chồng”, mỗi câu chuyện chạm đến một góc nhỏ trong cuộc sống thường ngày của những con người lao động với đôi nét cơ cực cùng với nỗi niềm riêng.\n\nTừ những mẩu chuyện ấy mà mình cảm nhận được tình thương yêu, sự thấu cảm mà tác giả đặt vào những con người ấy - những nhân vật trong câu chuyện. “Cánh đồng bất tận” thực sự là những câu chuyện chạm đến tâm can của nhiều người, và đặc biệt đối với mình - một đứa trẻ sinh ra và lớn lên ở quê lại hấp thụ điều đó sâu đậm hơn bao giờ hết. Đằng sau mỗi sự việc, mỗi con người đều là những câu chuyện dài. Có lẽ, nó chỉ nằm đó chờ chực ở đó và có thể bùng cháy bất kỳ lúc nào.\n\nỪ thì “Gió đưa cây cải về trời. Rau răm ở lại chịu lời đắng cay.”…\n\nTái bút: Còn một vài mẩu chuyện trong cuốn sách mình chưa đọc. Mình sẽ đọc nó trong những dịp khác, vì sợ rằng ngấu nghiến hết một lúc thì tâm hồn mình cũng buồn như nhân vật trong những mẩu chuyện ấy.\n\nHighlights I like (in Vietnamese)\n\n    \n      “Ừ tại tao thương con chốt. Qua sông là không quay về…”\n    \n\n    \n      “Nghe câu đó mà tôi thấy mình nghèo rơi rớt, nghèo đến nỗi không có… ông nội để thương, thèm muốn bên đường.”\n    \n\n    \n      “Đứa bé đó, nhất định nó sẽ đặt tên là Thương, là Nhớ hay Dịu, Xuyến, Hường… Đứa bé không cha nhưng chắc chắn được đến trường, sẽ tươi tỉnh và vui vẻ sống đến hết đời, vì được cha mẹ dạy, là trẻ con, đôi khi nên tha thứ lỗi lầm của người lớn.”"
+					}
+					
+				
+			
+		
+			
+				
+					,
+					
+					"thought-dung-chi-noi-ve-sach": {
+						"id": "thought-dung-chi-noi-ve-sach",
+						"title": "Robooksta &amp; Trải Nghiệm Đọc",
+						"categories": "thought",
+						"tags": "feeling, hanoi, café sách, paris",
+						"url": " /thought/dung-chi-noi-ve-sach",
+						"content": "In this post\n  \n  \n\n  Mỗi người đọc, mỗi cuốn sách là một trải nghiệm đọc riêng biệt\n  Chia sẻ trải nghiệm đọc để kết nối và cùng vươn lên\n  \u001dChia sẻ Trải Nghiệm Đọc như thế nào?\n  Đôi dòng về Café Sách Robooksta - Đọc, Chia sẻ và Kết nối\n  Hành trình này chỉ vừa mới bắt đầu\n\n\n  \n\n\nChúng ta thường hay nói về những cuốn sách, về nội dung, về thiết kế, về tình yêu chúng ta dành cho chúng. Nhưng mỗi cuốn sách chỉ thực sự mang lại giá trị qua tương tác với người đọc.\n\nTương tác ấy chính là trải nghiệm đọc mà chúng ta có. Trong bài viết này, mình sẽ đi sâu hơn vào khái niệm Trải Nghiệm Đọc và nói về sự chia sẻ những trải nghiệm ấy.\n\nMỗi người đọc, mỗi cuốn sách là một trải nghiệm đọc riêng biệt\n\nTrải nghiệm đọc bắt đầu từ khi bạn lựa chọn đọc một cuốn sách. Trải nghiệm đọc có tất cả những gì chúng ta hiểu ra, những gì chúng ta cảm nhận, những câu hỏi của chúng ta trong quá trình đọc. Trải nghiệm đọc có cả suy nghĩ và dư âm còn lại khi ta đã đọc xong trang sách cuối cùng. Rồi sau đó, mỗi khi ta nghĩ lại về cuốn sách, mỗi khi ta nói về nó với ai, mỗi khi ta cầm lại cuốn sách và lật giở lại vài trang, những điều ấy cũng thuộc về trải nghiệm đọc.\n\nMỗi cuốn sách, mỗi thể loại sách đem lại những trải nghiệm đọc khác nhau.\n\nMột cuốn sách khoa học diễn giải những kiến thức mới mẻ trong một lĩnh vực nào đó thông qua những giả thiết, lập luận và chứng minh. Tác giả sẽ cố gắng thuyết phục người đọc qua nhiều cách tiếp cận, ví dụ, thí nghiệm và thực nghiệm. Bên cạnh đó, cách viết của tác giả nếu gần gũi hay hài hước cũng góp phần làm cho người đọc cảm thấy tin tưởng và tiếp thu tốt hơn.\n\nMột cuốn tiểu thuyết văn học, dù là hiện đại hay cổ điển đều muốn đưa người đọc vào thế giới của câu truyện, một thế giới được dựng lên chỉ bởi ngôn từ. Từ thế giới ấy, người đọc có thể cảm nhận, suy nghĩ, hoài nghi và liên tưởng.\n\nMột cuốn sách về phát triển bản thân hay quản trị doanh nghiệp thường dựa và những kinh nghiệm và quan sát để đưa ra một số nguyên tắc nào đó, từ đó cố gắng thuyết phục người đọc suy nghĩ và làm theo những nguyên tắc ấy.\n\nNhưng với cùng một thể loại sách, cùng một cuốn sách thì những người đọc khác nhau sẽ có trải nghiệm riêng biệt. Bạn có thể biết rất rõ về tác giả, có thể là chuyên gia về chủ đề của cuốn sách nhưng cũng có thể hoàn toàn xa lạ với cả hai. Bạn có thể tìm đến cuốn sách với một mục đích rất cụ thể hoặc chỉ “bắt gặp” cuốn sách một cách tình cờ. Bản thân mỗi người đọc có cuộc sống riêng, có câu chuyện riêng, có trí tưởng tượng, có thói quen và tâm trạng riêng biệt, làm cho trải nghiệm đọc của họ với cuốn sách là duy nhất.\n\n\n  \n    \n\n\nChia sẻ trải nghiệm đọc để kết nối và cùng vươn lên\n\nĐọc sách là một trải nghiệm của tìm tòi và khám phá, về thế giới xung quanh và về chính bản thân mình. Đọc sách là một trải nghiệm của sự lắng đọng. Đọc sách là một trải nghiệm phiêu lưu thú vị. Đọc sách là một trải nghiệm chứa đầy đồng cảm và yêu thương.\n\nKhi đọc sách, ta chạm tới những quan điểm và đời sống khác biệt trên trang giấy. Đôi khi xảy ra “xung đột” tư duy một cách hoà bình. Chia sẻ trải nghiệm đọc cùng nhau, là ta cho mình và mọi người một cơ hội được bao dung, được mở lòng, hiểu và thêm trân trọng những khác biệt.\n\nKhi chia sẻ trải nghiệm đọc, chúng ta chia sẻ và lan tỏa những giá trị ấy để cùng nhau kết nối, cùng nhau vươn lên và hoàn thiện mình hơn.\n\nChia sẻ trải nghiệm đọc khác với review cuốn sách (đánh giá, phê bình). Review một cuốn sách là quan trọng và cần thiết, nhưng trải nghiệm đọc ngoài nói về cuốn sách còn nói về chính bản thân người đọc, nên mang một khía cạnh cá nhân hơn, làm cho sự chia sẻ dễ trở nên gần gũi, dễ cảm nhận hơn. Bài review hay nhất có lẽ đến từ một người có chuyên môn, có nhìn nhận khách quan về cuốn sách. Bài chia sẻ trải nghiệm đọc có ý nghĩa nhất có thể đến từ một người đọc mà bản thân bạn cảm thấy thân thuộc và gần gũi, có thể liên hệ được với bản thân mình.\n\nCũng chính vì tính cá nhân của trải nghiệm đọc mà người chia sẻ cần phải thật sự mở lòng. Dựa trên sự mở lòng đó, những trao đổi với mọi người diễn ra dựa trên sự chân thành và tin tưởng, từ đó hình thành những kết nối có giá trị trong cộng đồng đọc sách và rộng hơn nữa.\n\n\n  \n    \n\n\n\u001dChia sẻ Trải Nghiệm Đọc như thế nào?\n\nĐể chia sẻ trải nghiệm đọc thì bước đầu tiên là xác định được trải nghiệm đọc của mình có những yếu tố gì và hiểu được những yếu tố ấy đến từ đâu. Trải nghiệm đọc có thể là rất tâm đắc với cuốn sách, thấy nó rất thuyết phục, có thể là sự ngạc nhiên, nghi ngờ, hồi hộp thích thú, có thể là những liên hệ bản thân, suy tưởng mở rộng.\n\nTrải nghiệm đọc đến một phần từ cuốn sách, bố cục, cốt truyện, cách viết của tác giả, cách đặt câu hỏi, cách thuyết phục, những thông tin và hiểu biết mà nó mang lại. Phần còn lại của trải nghiệm đọc đến từ chính bản thân người đọc. Bạn chờ đợi gì từ cuốn sách? Đọc với tâm thế và thói quen như thế nào? Bạn có sẵn những hiểu biết và câu hỏi gì khi đến với cuốn sách? Vân vân.\n\nMột bài chia sẻ trải nghiệm đọc hiệu quả cần đem tới những thông tin tổng thể về cuốn sách. Viết năm nào, tác giả là ai, sách dày hay mỏng, dễ hay khó đọc, bố cục như thế nào. Bên cạnh đó, những trích dẫn cũng là một yếu tố quan trọng trong việc chia sẻ trải nghiệm đọc vì chân thực, dễ gây ấn tượng và nêu lên những cột mốc đáng nhớ trong quá trình đọc sách của bạn.\n\nChia sẻ trải nghiệm đọc không chỉ là đưa ra một tuyên bố “tôi thích cuốn sách này lắm, hay lắm”. Chia sẻ trải nghiệm đọc là một lời mời và một sự dẫn dắt người khác đi vào và hiểu được quá trình đọc cuốn sách của mình.\n\nĐôi dòng về Café Sách Robooksta - Đọc, Chia sẻ và Kết nối\n\nCafé Sách Robooksta là một nhóm gồm các bạn trẻ ham thích đọc sách và tin vào giá trị của việc chia sẻ trải nghiệm đọc. Nhóm được thành lập từ năm 2016.\n\nBọn mình đã cùng đọc, chia sẻ và kết nối. Qua 4 năm hoạt động, Robooksta đã tổ chức hơn 60 sự kiện chia sẻ, điểm qua hơn 100 đầu sách với những chủ đề và thể loại rất đa dạng. Mỗi sự kiện đều là một dịp để chúng mình gặp gỡ và trò chuyện, với những con người cũ và những người bạn mới quen, xoay quanh trải nghiệm đọc, xoay quanh vẻ đẹp, kiến thức và lý tưởng từ những cuốn sách.\n\nKhởi đầu tại Paris với tên Café Sách, Robooksta hiện nay có mặt tại Hà Nội, TP Hồ Chí Minh, London. Năm 2020 Robooksta đã có những thành công bước đầu khi tổ chức các sự kiện online bằng cả tiếng Việt và tiếng Anh.\n\nBọn mình cũng đã may mắn có dịp kết nối và tổ chức sự kiện với những việc khách mời đặc biệt, như anh Nguyễn Cảnh Bình - sáng lập và Chủ tịch Alpha Books, nhà văn Nguyễn Thanh Việt - người gốc Việt đầu tiên giành giải Pulitzer cho tiểu thuyết, cô Tôn Nữ Thị Ninh - cựu Đại sứ Việt Nam tại Cộng đồng Châu Âu, thầy Phan Văn Trường - người đã viết nhiều cuốn sách hay về thương thuyết và quản trị, nhà văn Thuận - tác giả của nhiều tiểu thuyết được xuất bản cả bằng tiếng Việt và tiếng Pháp.\n\nHành trình này chỉ vừa mới bắt đầu\n\nBọn mình tin rằng công việc chia sẻ Trải Nghiệm Đọc là một hành trình phía trước, một hành trình còn dài và thú vị. Xoay quanh kiến thức, lý tưởng và vẻ đẹp của mỗi cuốn sách, xoay quanh trải nghiệm của mỗi người đọc, bọn mình hy vọng gặp thêm nhiều người bạn mới, cùng đọc và chia sẻ, cùng học hỏi lẫn nhau, cùng kết nối và cùng nhau vươn lên.\n\nHẹn gặp các bạn tại những sự kiện sắp tới!\n\n\n  \n    \n\n\nP/s: Đây là chia sẻ của anh Chủ tịch Café Sách Robooksta của chúng mình!"
+					}
+					
+				
+			
+		
+			
+				
+					,
+					
+					"reading-thoi-xa-vang": {
+						"id": "reading-thoi-xa-vang",
+						"title": "Thời xa vắng",
+						"categories": "reading",
+						"tags": "fiction",
+						"url": " /reading/thoi-xa-vang",
+						"content": "Information\n\n\n  Title in Vietnamese: Thời xa vắng\n  Genre: Tiểu thuyết\n  Author: Lê Lựu\n  Published: 1984\n\n\n\nBelow comments are in Vietnamese, please wait for an English version.\n\nMình biết đến cuốn tiểu thuyết này khi xem bộ phim “Thời xa vắng” (tên tiếng Pháp là Le temps révolu) của đạo diễn Hồ Quang Minh. Mình rất ấn tượng với nội dung của bộ phim này, tuy nhiên mình được biết nội dung của bộ phim không hoàn toàn giống với nguyên tác của tiểu thuyết nên mình đã quyết định đọc nó.\n\n\n  \n  Lê Lựu (Nguồn: Báo nông nghiệp Việt Nam)  \n\n\nLê Lựu sinh ngày 12 tháng 12 năm 1942 tại Khoái Châu, Hưng Yên. Ông được biết đến nhiều nhất qua hai tác phẩm “Thời xa vắng” và “Sóng ở đáy sông”. Đây cũng là 2 tác phẩm đã được chuyển thể thành các bộ phim cùng tên rất thành công.\n\nTrong tiểu thuyết này, Lê Lựu đã viết lên một thời đầy khó khăn cũng như gian khổ ở một vùng quê nghèo. Ở đó không chỉ có cảnh đẹp, sự giản dị, những tư tưởng mới và cũ gặp nhau mà xuyên suốt tác phẩm là một câu chuyện xót xa về tình yêu và những sai lầm của tuổi trẻ. (mình sẽ không đưa ra nhận xét gì về chế độ xã hội cũ và mới cả…)\n\nSài - nhân vật chính, theo mình đó là sự chuyển giao của cái chế độ cũ và mới, là một tấm gương cho những người trẻ trong mọi chuyện từ cuộc sống, công việc đến tình yêu. Chính nhân vật Sài đã càng thôi thúc mình phải dám sống với chính mình, bởi suy cho cùng thì chỉ có chính mình mới biết mình cần điều gì nhất. Không chỉ Sài, mà mỗi nhân vật trong câu chuyện này như Hương, Châu, chú Hà, anh Tính, anh Hiểu… đều sẽ dạy cho mình những điều thật bình dị nhưng cũng thật ý nghĩa. Bởi biết đâu một ngày nào đó, những bài học trong cuốn tiểu thuyết này mình sẽ gặp phải trong cuộc sống đời thường thì sao?\n\nThực sự khi đọc cuốn sách này, mình nhớ lại những ngày còn nhỏ, nhớ làng quê mình ngày ấy và cả những khó khăn trong thời ấu thơ. Dẫu sao, “Thời xa vắng” sẽ là một kí ức đẹp đối với nhiều người - mình tin là vậy. Và để rồi sau khi khép lại những trang cuối cùng của cuốn tiểu thuyết ấy, đầu mình văng vẳng một câu hỏi: “Phải chăng, giờ đây, làng quê đang biến mất?”\n\n\nHighlights I like (in Vietnamese)\n\n    \n      “Không hiểu từ thuở nào làng chỉ quen đi làm thuê. Miếng cơm thiên hạ bao giờ cũng ngon nên người sức dài vai rộng thì đi tứ chiếng bằng đủ thứ nghề: hàn nồi và cắt tóc, đốt gạch và nung vôi, thợ nề, thợ đất, thợ lặn… Dăm bữa, nửa tháng vợ hoặc con đảo qua để làm cỏ, xáo xới rồi cũng lại vội vã ra đi. Đến mùa thu hoạch lại về. Hết mùa lại đi. Cứ thế. Khi về lại nhớ cơm thiên hạ. Khi đi lại cồn cào thương từ gốc cau, bụi chuối. Họ không yêu tha thiết với đồng ruộng nhưng không đủ sức dứt bỏ những gì quen thuộc từ thuở cha sinh mẹ đẻ ở cái nơi mà ai cũng quen gọi là quê Hương…Những người còn lại hoặc tuổi già yếu, con bận con mọn, hoặc không biết nghề, không quen đi xa, cái lực lượng sản xuất chủ yếu ấy cũng chỉ chòn chọt năm một vụ ngô, tháng mười cày bừa dối dả, tháng tư bẻ bắp chặt cây vội vàng để rồi lại nô nức kéo nhau sang bên kia sông, vào nội đồng làm thuê, sáng cắp nón đi, tối cắp nón về nói cười rả rích. Dường như số trời đã định cho làng này chỉ có việc đi làm thuê. Chen lấn, tranh cướp nhau từng người chủ, và ai được chủ tin thì coi đó là một diễm phúc có thể vênh váo, hãnh diện với kẻ khác, sẵn sàng hạch sách bắt bẻ người cùng xóm, cùng làng, cùng cánh thợ làm thuê một cách nghiệt ngã độc ác hơn cả người chủ thật.\n    \n\n    Bởi thế, cũng là tỉa ngô, rắc đỗ, ruộng nhà thì làm quáng quàng chỗ dầy, chỗ mỏng, hàng thưa hàng mau nhưng ruộng của chủ cứ đều tăm tắp. Ruộng nhà không bao giờ bón phân, cả làng không ai bón phân, cần quái gì chuồng lợn, chuồng xí. Đàn ông, đàn bà, cả người già trẻ con đều chạy toá ra đồng và lợn cũng thả rông hoặc có chuồng thì cũng chả cần phân ấy để làm gì. Chính những con người ấy lại đánh phân, rửa ráy quét dọn cả chuồng xí, chuồng lợn cho chủ rồi gánh ra đồng cứ của những người chủ tốt tươi sai quả, mấy hạt lại theo đà đâu đó, ca thán, và xỉ vả làng mình ngu si không biết đường làm ăn.”"
+					}
+					
+				
+			
+		
+			
+				
+					,
+					
+					"reading-la-roi-trong-thanh-pho": {
+						"id": "reading-la-roi-trong-thanh-pho",
+						"title": "Lá rơi trong thành phố",
+						"categories": "reading",
+						"tags": "short story",
+						"url": " /reading/la-roi-trong-thanh-pho",
+						"content": "Information\n\n\n  Title in Vietnamese: Lá rơi trong thành phố\n  Genre: Tiểu thuyết\n  Author: Lê Xuân Khoa\n  Published: June 2013 (Nhà xuất bản văn học &amp; THAIHABOOKS)\n\n\n\nBelow comments are in Vietnamese, please wait for an English version.\n\nMột cuốn sách chẳng được quảng cáo rầm rộ. Một tác giả mà nhiều người còn chẳng biết là ai. Nhưng câu chuyện trong cuốn sách lại khiến cho mình có những rung động thực sự, và nó đã trở thành một trong những cuốn sách rất yêu thích của mình.\n\nNếu bạn mong chờ một câu chuyện với nhiều lớp, nhiều tầng thì có lẽ cuốn sách này không dành cho bạn. Nếu bạn mong chờ những “plot stwist” thì có lẽ cuốn sách này cũng không dành cho bạn. Nhưng chính cái cách kể chuyện nhẹ nhàng và nhẫn nại của anh Khoa khiến mình không thể rời khỏi cuốn sách. Và bật mí cho các bạn biết rằng, đây cũng là cuốn sách đầu tiên khiến mình có cảm giác muốn viết, viết những câu chuyện của riêng mình. Đó cũng là lý do mà cuốn sách này được mình đánh giá 5 sao (đối với mình).\n\nCho đến khi viết những dòng này thì cũng là lúc mình vừa kết thúc việc đọc và nghe cuốn sách này lần thứ 4 (lần đầu vào ngày 21/01/2014). Mình sẽ không nói nhiều về nội dung của cuốn sách. Mình chỉ tóm gọn nó như cách tác giả trả lời phỏng vấn: “Chiếc lá lìa cành là một hiện tượng bình thường trong cuộc sống. Câu chuyện của tôi cũng là một câu chuyện bình thường về con người và cuộc sống con người thôi. Và đó là cuộc sống của những người trẻ giữa Hà Nội náo nhiệt này. Dưới rất nhiều biến chuyển thăng trầm với tốc độ tên lửa của xã hội đương đại, làm sao chúng ta có thể dừng lại và biết mình nên đi đâu. Bạn có thấy ngoài kia gió to không? Tôi là chiếc lá, và bạn cũng vậy đấy.”\n\n\nHighlights I like (in Vietnamese)\n\n    \n      Tác giả trả lời phỏng vấn báo Người đưa tin: “Chiếc lá lìa cành là một hiện tượng bình thường trong cuộc sống. Câu chuyện của tôi cũng là một câu chuyện bình thường về con người và cuộc sống con người thôi. Và đó là cuộc sống của những người trẻ giữa Hà Nội náo nhiệt này. Dưới rất nhiều biến chuyển thăng trầm với tốc độ tên lửa của xã hội đương đại, làm sao chúng ta có thể dừng lại và biết mình nên đi đâu. Bạn có thấy ngoài kia gió to không? Tôi là chiếc lá, và bạn cũng vậy đấy.”"
+					}
+					
+				
+			
+		
+			
+				
+					,
+					
+					"simulation-thermal-analysis-of-teapot": {
+						"id": "simulation-thermal-analysis-of-teapot",
+						"title": "Thermal analysis of teapot",
+						"categories": "simulation",
+						"tags": "simulation",
+						"url": " /simulation/thermal-analysis-of-teapot",
+						"content": "This example is reproduced from ANSYS.\n\n\nOverview\nIn this example we intend to perform thermal analysis of a tea pot and indicate the temperature distribution in a steady state and transient analysis for steel material and for porcelain material.\n\nGoal\nTo perform steady state and transient thermal analysis for steel and porcelain tea pot.\n\nModeling Steps\n1. Open Ansys workbench, create a “Steady State Thermal System” system\n\n2. Define material property for the parts. Steel and Porcelain are used here just for demonstration purpose, but proper material property should be used.\n\n3. Import model and suppress half-symmetric portion of the model. After suppressing the half portion, the model will look like as indicated in Figure 1.\n\n\n  \n  Figure 1. Cross-Section view of Tea-Pot Main Body and Lid  \n\n\n4. Assign material to geometry. First analysis will be performed for porcelain material.\n\n5. Thermal contacts generated by default between the main body and lid is used in the analysis.\n\n6. Apply relevant thermal boundary conditions on the model as indicated in Figure 2. The tea is assumed to be at 100 0C in the teapot.\n\n\n  \n  Figure 2. Convection, Temperature and Radiation Boundary Conditions  \n\n\n7. Mesh the model with a linear mesh and solve the analysis. The temperature distribution looks like as indicated in Figure 3.\n\n\n  \n  Figure 3. Temperature Distribution  \n\n\n8. One can plot the vector graph of heat flux for the teapot as indicated in Figure 4.\n\n\n  \n  Figure 4. Heat Flux showing conduction, convection and radiation heat transfer  \n\n\n9. Now change the material to steel and repeat the steps 4 to 8 for this material.\n\n10. Perform a transient analysis. The steps indicated above remains the same only with change that the analysis is solved for 100s and the temperature drops during this time from 1000 C to ambient temperature of 220 C.\n\n11. Mesh the model, define substep and solve the model. The temperature distribution for Porcelain material looks like as indicated in Figure 5.\n\n\n  \n  Figure 5. Temperature Distribution  \n\n\n12. Similarly, perform the transient analysis for the steel material.\n\nSummary\nSummarize the results succinctly and tie them closely with the modeling goals outlined above."
+					}
+					
+				
+			
+		
+			
+				
+					,
+					
+					"tutorial-harmonic-analysis-of-structures": {
+						"id": "tutorial-harmonic-analysis-of-structures",
+						"title": "Harmonic Analysis of Structures",
+						"categories": "tutorial",
+						"tags": "analysis, harmonic, structure",
+						"url": " /tutorial/harmonic-analysis-of-structures",
+						"content": "In this post\n  \n  \n\n  Intro to Harmonic Analysis\n  Formulation of Harmonic Analysis    \n      Formulation\n    \n  \n\n\n  \n\nThis post is referred from Ansys document.\n\nIntro to Harmonic Analysis\n\nForced Frequency Response or Harmonic Analysis is an important branch of linear dynamics. Linear dynamics solves the equation of motion as a frequency domain problem instead of a time domain problem.\n\nWhy it is important\n\n  Most engineered structures will be vibration tested to verify the dynamic response.\n  The design may need to avoid resonance with a known excitation.\n  Understanding the magnitude of the vibration can prevent fatigue failure.\n  This is an effective way to understand the significance of the different modes.\n  Harmonic analysis can be used alongside physical testing (such as a shaker table with sine sweep) to correlate the models (natural frequencies and damping).\n\n\nFormulation of Harmonic Analysis\n\nHarmonic analyses are used to determine the steady-state response of a structure to loads that vary sinusoidally (harmonically) with time.\n\nEngineers use harmonic analysis to verify a design, providing insight such as:\n\n  Will resonance occur, which could result in excessive motion, stress, noise and vibration?\n  Will the cyclically repeating load result in repetitive stress, resulting in fatigue damage and potential failure?\n\n\nFormulation\n\n  Starting with the matrix form of the governing equations of motion, let’s explore a harmonic solution to this equation.\n\n  The Forcing Function  and displacement  are of the form shown below. Recall that these can be visualized as sinusoids and simply given a value for time  and circular frequency  we can compute the complex values of the force or displacement at each node, once we have of course solved for the unknown max values and phase shifts for each node in the model."
+					}
+					
+				
+			
+		
+			
+				
+					,
+					
+					"tutorial-for-the-editors-only": {
+						"id": "tutorial-for-the-editors-only",
+						"title": "For the editor only",
+						"categories": "tutorial",
+						"tags": "admin",
+						"url": " /tutorial/for-the-editors-only",
+						"content": "This post is only for the editors, please read other posts.\n\n\n\n  Bài này chỉ dành cho tác giả blog, các bạn vui lòng đọc các bài khác nhé.\n\n\n\n  \n    In this post\n  \n  \n\n  Front matter\n  Inset figures\n  Side by side figure and content\n  Insert codes\n  Insert boxes\n  Steps\n  Fonts &amp; Texts\n  Math expressions\n\n\n  \n\n\nFront matter\n\n\n  If you don’t want to use any item below, don’t write it down. math: 0 will be considered similarly to math: 1 and jekyll understand that they are the same unless you don’t write either of them.\n\n\n\n  math: 1 : only add if you wanna use math equations inside post.\n  categories: categories among thought, reading, sketch, tutorial.\n  tags: add new tag in _data\\tags.yml before using it.\n  img: thumbnail of the post .\n  bigimg: background photo of the post (showing on shared post on facebook)\n  For tutorial posts\n    \n      snippet: 1: use if it post in category tutorial and you wanna pin it on top.\n      Thumbnail for posts in tutorial should be saved in /img/tutorial/\n    \n  \n  For reading posts\n    \n      subtitle: author\n      subtitle_link: author’s profile url\n      img: hnmkad.png: book cover (image’s url is img/bookimg/)\n      rating: 3.5: rating of the book, must be a number, not string\n    \n  \n  update: 1: if you just update the content of the post. Notice that, the badge “update” is only showed if the updated date is under 7 days.\n  notnumbering: 1: if you don’t want to number headings inside the post.\n    \n      In the case you don’t want to number certain of headings, use {:.nocount} before that heading.\n    \n  \n\n\nInset figures\n\n\n  Normal inserting: ![Describe](link/to/figures)\n  Full width: {% include img/full.html src=\"link/to/figures\" des=\"description\" %}\n  Full but modified: {% include img/full-normal.html src=\"link/to/figures\" des=\"description\" %}\n  Full but 50% width: {% include img/full-50.html src=\"link/to/figures\" des=\"description\" %}\n  Float to right: {% include img/right.html src=\"link/to/figures\" des=\"description\" %}\n  Float to left: {% include img/left.html src=\"link/to/figures\" des=\"description\" %}\n\n\nSide by side figure and content\n\n\n  \n    Figure on the left:\n\n    &lt;div class=\"row align-items-center img-aside\"&gt;\n&lt;p class=\"col-md-6\" markdown=\"1\"&gt;\n![Description](/link/to/figure)\n&lt;/p&gt;\n&lt;p class=\"col-md-6\" markdown=\"1\"&gt;\nContents\n&lt;/p&gt;\n&lt;/div&gt;\n    \n  \n  \n    Figure on the right (but above on a smaller view port):\n\n    &lt;div class=\"row align-items-center img-aside\"&gt;\n&lt;p class=\"col-md-6 order-md-2\" markdown=\"1\"&gt;\n![Description](/link/to/figure)\n&lt;/p&gt;\n&lt;p class=\"col-md-6 order-md-1\" markdown=\"1\"&gt;\nContents.\n&lt;/p&gt;\n&lt;/div&gt;\n    \n  \n\n\nInsert codes\n\n\n  If you wanna add tag {% this %}, use alert{{\"{% this \"}}%}.\n  If you like this {{ this }}, use {{\"{{ this \"}}}}.\n  The rule: use {{\" before the key-word and end with \"}} before the end of key-word.\n  \n    An easier way: use {% raw %} and {% endraw %} around the key-word. These two commands are also used for a block of codes,\n\n    ~~~ {% raw %}{% for %}\n// line of codes\n{% end for %}{% endraw %} ~~~\n    \n\n    Tips: For a beautiful display, put {% raw %} and {% endraw %} exactly like the above code.\n  \n\n\nInsert boxes\n\n\n  \n    Terminal box\n\n    &lt;div class=\"terminal\"&gt;\n$ sudo apt-get update\n&lt;/div&gt;\n    \n  \n  Warning bootstrap : here.\n    \n      \n        Success box (green):\n\n        &lt;div class=\"alert alert-success\" role=\"alert\" markdown=\"1\"&gt;\nContent\n&lt;/div&gt;\n        \n      \n      \n        Warning (yellow)\n\n        &lt;div class=\"alert alert-warning\" role=\"alert\" markdown=\"1\"&gt;\nContent\n&lt;/div&gt;\n        \n      \n      \n        Danger (red)\n        &lt;div class=\"alert alert-danger\" role=\"alert\" markdown=\"1\"&gt;\nContent\n&lt;/div&gt;\n        \n      \n    \n\n    \n      If you wanna insert a block of math inside above boxes, don’t foget to wrap them inside a p tag.\n    \n  \n  \n    Quotes I like (hide/show)\n\n    &lt;div class=\"tomTat\"&gt;\n&lt;div id=\"btTomTat\" class=\"collapsed\" data-toggle=\"collapse\" href=\"#ndTomTat\"&gt;\n  &lt;span&gt;Highlights I like&lt;/span&gt;\n&lt;/div&gt;\n&lt;div id=\"ndTomTat\" markdown=\"1\" class=\"collapse multi-collapse ndTomTat\"&gt;\nContents.\n&lt;/div&gt;\n&lt;/div&gt;\n    \n  \n  \n    Definition box\n\n      &lt;div class=\"def-box\" markdown=\"1\" id=\"dn1\"&gt;\n  &lt;div class=\"box-title\" markdown=\"1\"&gt;\n  Title\n  &lt;/div&gt;\n  &lt;div class=\"box-content\" markdown=\"1\"&gt;\n  Content\n  &lt;/div&gt;\n  &lt;/div&gt;\n    \n  \n\n\nSteps\n\n&lt;div  class=\"thi-step\"&gt;\n\n&lt;div class=\"step\"&gt;\n&lt;div class=\"step-number\"&gt;&lt;/div&gt;\n&lt;div class=\"step-content\" markdown=\"1\"&gt;\nContent of step 1.\n&lt;/div&gt;\n&lt;/div&gt;\n\n&lt;div class=\"step\"&gt;\n&lt;div class=\"step-number\"&gt;&lt;/div&gt;\n&lt;div class=\"step-content\" markdown=\"1\"&gt;\nContent of step 2.\n&lt;/div&gt;\n&lt;/div&gt;\n\n&lt;/div&gt;\n\n\nFonts &amp; Texts\n\n\n  \n    Info\n\n    &lt;h4 class=\"post-more\"&gt;Information&lt;/h4&gt;\n    \n  \n  Marked texts: &lt;mark&gt;texts&lt;/mark&gt;\n  Keyboard: &lt;kbd&gt;B&lt;/kbd&gt;\n  More link:\n    {% include more.html content=\"[text](link)\" %}\n    \n  \n  Subject: &lt;sbj&gt;Texts&lt;/sbj&gt;\n  \n    Hide/show description for links\n\n    [**Title**](link){:target=\"_blank\"} other texts. [*(my comments)*](#des-1){:data-toggle=\"collapse\" .my-des}\n  &lt;des id=\"des-1\" class=\"collapse multi-collapse\"&gt;descriptions&lt;/des&gt;\n    \n  \n\n\nMath expressions\n\n\n  Inline math, use $math-expression$\n  \n    Block of math, use $$math block$$ or\n\n    $$\nx^n + y^n = z^n\n$$\n    \n  \n  If you wanna insert some special characters, you must put \\ before this character, for instance, \\\\{ 1,2,3 \\\\} gives $\\{ 1,2,3 \\}$\n  If you type inline maths which contain chatacters _, you must add \\ before each of them, for example, a\\_1 give $a_1$.\n  Don’t use || for absolute values, let’s use \\vert \\vert instead.\n  Don’t use \\left\\| \\right\\| for norms, use \\Vert \\Vert instead.\n  Don’t use * for star symbols, use \\ast instead.\n  If you wanna type \\\\, type \\\\\\\\ instead.\n  \n    If you wanna type an inline matrix, e.g., $[A]=\\begin{bmatrix}1 &amp; 2 \\\\ 2 &amp; 3.999 \\end{bmatrix}$, type like below,\n\n    $[A]=\\begin{bmatrix}1 &amp; 2 \\\\\\\\ 2 &amp; 3.999 \\end{bmatrix},$\n    \n  \n  \n    In order to use \\label{} and \\eqref{} like in latex, use\n\n    $$\n\\begin{align}\\tag{1}\\label{eq1}\nx^n + y^n = z^n\n\\end{align}\n$$\n\nCall again equation $\\eqref{eq1}$.\n    \n  \n  \n    You don’t need an enviroment align or equation to use \\label, you can use it with $$ only, for example,\n\n    $$\nx^n + y^n = z^n \\tag{1}\\label{eq1}\n$$\n\nCall again equation $\\eqref{eq1}$."
+					}
+					
+				
+			
+		
+			
+				
+					,
+					
+					"thought-gala-cfs-2020": {
+						"id": "thought-gala-cfs-2020",
+						"title": "Gala CFS Hà Nội 2020",
+						"categories": "thought",
+						"tags": "feeling, hanoi, café sách",
+						"url": " /thought/gala-cfs-2020",
+						"content": "Sự kiện Gala của Café Sách Robooksta tại Hà Nội là một dấu mốc đầy ấn tượng để kết thúc của một năm 2020 với rất nhiều cảm xúc đối với mình.\n\n\n  \n  Ảnh của mình tại sự kiện Gala Café Sách Robooksta tại Hà Nội (26/12/2020).  \n\n\nDưới đây là một số câu hỏi mình nhận được nhiều nhất về CFS:\n\n#1. Question: Café Sách là quán cà phê bán sách à?\n\nAnswer: Oh nooo! Vui lòng ghé thăm fanpage Café Sách Robooksta của chúng mình để biết thêm chi tiết nhé?\n\n#2. Q: Làm Café Sách có mệt không cậu?\n\nAnswer: Không mệt đâu. Mà là rất mệt, vì sau mỗi sự kiện diễn ra vào thứ 7 là nguyên ngày Chủ nhật tớ phải ở nhà để sạc lại năng lượng. Nói cho cùng thì, tuy mệt nhưng vui!\n\n#3. Q: Tại sao cậu luôn có tâm huyết dành cho CFS đến như vậy?\n\nAnswer: Thật khó để trả lời, nhưng để tớ nói cho cậu vài điều này. Cậu biết không, buổi sáng thứ 7 tớ vẫn phải đi làm. Tuy vậy, buổi chiều hôm đó, khi đến với sự kiện thì mọi mệt nhọc, căng thẳng của công việc kỹ sư dường như tan biến hết. Vì ở mỗi sự kiện của CFS, mình được là chính mình. Mà thực ra, giống như việc đọc và viết, CFS tạo ra sự cân bằng giữa công việc và cuộc sống của tớ.\n\n#4. Q: Làm CFS có được nhiều tiền không?\n\nAnswer: Ơ… ai lại hỏi vấn đề tài chính thế này. Để tớ nói cho một bí mật cực lớn nhé: Các thành viên trong ban tổ chức tại Hà Nội đều điền tên CFS là một đối tượng mà có khoản nợ khó đòi. Thế nên đừng hỏi điều này nữa nhé!\n\n#5. Q: Đến CFS thì có người yêu không? Vì tớ nghe nói anh chủ tịch của CFS cũng vì làm trong CFS mà đã có vợ đấy.\n\nAnswer: Cậu nhìn ảnh sự kiện thì biết rồi đấy, toàn trai xinh gái đẹp cả thôi. Nhưng hãy nhìn những người trong ban tổ chức thì biết, ngoài chị Phương ra thì những người còn lại… 😞\n\n#6. Q: Làm thế nào để tớ trở thành một thành viên trong ban tổ chức của CFS tại Hà Nội?\n\nAnswer: Hãy đầy trách nhiệm như Loan. Hãy đầy nhiệt huyết như chị Hằng. Hãy điềm tĩnh như anh Đức. Hãy yêu cái đẹp và mộng mơ như chị Hà Anh. Hãy đầy sự sáng tạo và tình yêu như chị Phương. Nhưng thực ra mà nói, chỉ cần cậu là một người muốn đóng góp cho sự phát triển cộng đồng đọc sách tại Việt Nam thì đã là quá đủ rồi. ❤\n\nGoodbye, 2020!"
+					}
+					
+				
+			
+		
+			
+				
+					,
+					
+					"thought-gio": {
+						"id": "thought-gio",
+						"title": "Gió",
+						"categories": "thought",
+						"tags": "feeling, hanoi, paris, memoirs",
+						"url": " /thought/gio",
+						"content": "Trời đã vào đông, Hà Nội chập chững những bước đi đầu tiên trong thương nhớ. Tiếng bàn phím gõ lách cách…\n\n- Này cậu, mùa đông ở Paris chắc lạnh lắm nhỉ?\n\n- Không đâu, cái lạnh của thời tiết có đáng gì so với cái lạnh trong lòng chứ.\n\n\n  \n  Cây táo dại trước khu nhà kí túc xá của mình tại Pháp.  \n\n\nHà Nội, Tranquil Book &amp; Coffee.\n\n2 năm không phải thời gian quá dài.\n\nTớ gặp lại cậu.\n\nCapuchino.\n\nCâu chuyện. Lyon. Paris.\n\nCông việc. Kế hoạch. Ước mơ.\n\nQua khung cửa sổ,\n\nlá bay xào xạc…\n\nGió, bình dị và gần gũi. Gió thân thuộc quá đến nỗi người ta chẳng bao giờ dừng lại để nghĩ về nó. Gió đến rồi đi. Gió đến mang theo bao điều mới mẻ và gió đi cũng cuốn theo bao điều đổi thay. Gió cũng giống như tớ và cậu, không bao giờ chịu đứng yên một chỗ, lúc đi chậm, lúc đi nhanh, có lúc nhẹ dịu nhưng cũng có lúc xối xả ồn ào.\n\nCậu hãy nhìn ra cửa sổ mà xem. Tớ là gió. Và chắc rằng, cậu cũng vậy…\n\nSee ya!!!\n\nP/s: “You may say I’m a dreamer, but I’m not only one.”"
+					}
+					
+				
+			
+		
+			
+				
+					,
+					
+					"reading-di-tron": {
+						"id": "reading-di-tron",
+						"title": "Đi trốn",
+						"categories": "reading",
+						"tags": "fiction",
+						"url": " /reading/di-tron",
+						"content": "Information\n\n\n  Title in Vietnamese: Đi trốn\n  Genre: Tiểu thuyết\n  Author: Bình Ca\n  Published: November 2020 (Nhã Nam)\n\n\n\nBelow comments are in Vietnamese, please wait for an English version.\n\nMột quyển sách hay là khi bạn đọc đến trang cuối cùng và nhận ra rằng mình vừa chia tay một người bạn thân thiết.\n\n\n  \n  Tác giả Bình Ca (áo đen) giao lưu với bạn đọc. (Nguồn: baotintuc.vn)  \n\n\nVẫn là bác Bình Ca, vẫn cái giọng văn ấy, cái tính cách ấy; nhưng hãy quên “Quân Khu Nam Đồng” đi, bởi “Đi trốn” là một chuyến đi “phượt” cả về mặt không gian và thời gian. Ở đó, bạn sẽ cười, sẽ nhói lòng nhưng cuối cùng thì để lại trong lòng vẫn là tình bạn, tuổi thơ và tình yêu ấm áp.\n\nCuốn sách làm mình nhớ lại một phần tuổi thơ của mình. Những buổi trộm ngô, trộm khoai rồi sau đó mới phát hiện ra trộm đúng ruộng nhà mình. Còn nhiều thứ khác nữa mà mình không thể kể hết.\n\nThực ra đây là cuốn sách mà mình có thể nói rất nhiều, nhiều như cuốn “Quân khu Nam Đồng”. Nhưng một cuốn sách hay chỉ nên đọc và cảm nhận thôi nhỉ?\n\n\n  \n  Tiểu thuyết 'Đi trốn' với chữ kí của tác giả.  \n\n\nVà cùng chờ đón cuốn sách thứ 3 của bác Bình Ca nữa chứ!\n\n“… cuộc đời mỗi người như một dòng sông, luôn chảy về phía trước. Trong cuốn sách này, tôi muốn giới hạn câu chuyện kể về những nhân vật của mình trong một khúc sông tuổi thơ. Có thể một ngày nào đó, tôi sẽ kể cho các bạn nghe về họ ở một khúc sông khác, trong một câu chuyện chiến tranh. Bởi hầu hết số phận của những đứa trẻ sinh ra, lớn lên trong những năm đất nước có chiến tranh là ở chiến hào.”\n\n\n  \n  Mình bị chụp trộm trong buổi ra mắt sách của tác giả Bình Ca.  \n\n\nP/s. Sau khi đọc xong cuốn sách, muốn đi Ninh Bình thực sự. Ai có hứng thú đi cùng không nào???\n\n\nHighlights I like (in Vietnamese)\n\n    \n      Update later"
+					}
+					
+				
+			
+		
+			
+				
+					,
+					
+					"reading-nghe-thay": {
+						"id": "reading-nghe-thay",
+						"title": "Nghề thầy",
+						"categories": "reading",
+						"tags": "education",
+						"url": " /reading/nghe-thay",
+						"content": "Information\n\n\n  Title in Vietnamese: Nghề thầy\n  Genre: Sách giáo dục\n  Author: Hoàng Đạo Thuý\n  Published: November 2020 (Nhã Nam)\n\n\n\nBelow comments are in Vietnamese, please wait for an English version.\n\nBài viết được viết bởi một người sắp chuyển sang nghề bán sách dạo! :’)\n\n(Đây là lần đầu tiên mình viết một bài giới thiệu sách bởi vì mình tin rằng tất cả mọi người đều nên đọc cuốn sách này - đặc biệt là những người đang làm công việc liên quan đến giáo dục. Lý do ư? Hãy đọc hết bài viết này nếu bạn có thời gian.)\n\n\n  \n  Ảnh trong sự kiện của tháng 11/2020 của Café Sách Robooksta tại Hà Nội  \n\n\nMột cuốn sách được viết từ năm 1944 thì có gì đặc sắc? Nó rốt cuộc viết về cái gì? Liệu có đáng đọc trong xã hội hiện đại ngày nay, hay chỉ là thú vui cho những kẻ ưa hoài niệm? Đó là những câu hỏi đầu tiên khi mình bắt đầu đọc nguyên bản của cuốn sách này.\n\nMình rất may mắn khi được làm việc cùng chị Giang – biên tập viên của Nhã Nam, người trực tiếp gõ lại từng con chữ cho việc tái bản cuốn sách này. Qua đó, mình thêm trân trọng cuốn sách, biết thêm về “nghề thầy” và đặc biệt là hiểu thêm về bản thân mình.\n\nNội dung của cuốn sách xoay quanh những quan niệm về nghề thầy và những tiêu chuẩn của người thầy. Nhưng phần mình thích và ấn tượng hơn cả lại là những quan điểm, phương pháp dạy trẻ từ khi sinh ra đến tuổi thanh niên cho cha mẹ và người thầy.\n\nNgay từ phần lời tựa, cuốn sách đã thu hút mình một cách đặc biệt bởi cách mà tác giả đã đưa ra quan điểm và mục đích của giáo dục:\n“Chúng ta mà muốn, thì chúng ta có thể đổi hẳn tương lai nòi giống. Chỉ mười năm, phải, mỗi người chỉ tận tụy mười năm, là một thế hệ thanh niên sẽ đổi khác. Huống hồ đời giáo dục của chúng ta ba mươi năm, hay hơn nữa. Đó không phải là mơ mộng. Sự thực ai cũng làm được, mà ai cũng phải làm mới được.\n\n…\n\nViệc sửa soạn thi các văn bằng dù người ta coi đó làm cái thước đo ông thầy, chúng ta chỉ nên coi nó làm một cách thử sức thôi. Lúc bảo học không cần để tâm đến việc thi. Không bị kỳ thi dọa nạt thì khỏi nô lệ cái học, trí dễ mở, dễ hấp thụ. Nếu tìm được cách làm cho học trò ham học, học cho biết, học vì thích, thì các môn học sẽ thấm thía sâu, ở bền trong óc.”\n\nNếu không giới thiệu ngay từ đầu thì bạn có tin rằng những câu viết trên được viết vào năm những năm bom đạn, nạn đói và nghèo khó không? Cá nhân mình thì hoàn toàn bất ngờ, bởi nó như đang viết cho chính mình ở cuộc sống hiện tại.\n\nCái hay của tác giả là ngay tại thời điểm đó đã biết cách kết hợp giữa quan điểm dạy học truyền thống và hiện đại. Là một nhà Nho nên các quan niệm về học thuyết Nho gia đã được tác giả thể hiện rất rõ trong cuốn sách về Đức, Chí, Thể, Trí, Công, Trung, Hiếu, Đễ. Cùng với đó, tác giả đã đưa ra những quan điểm rất hiện đại (so với thời ấy) về việc cho trẻ phát triển theo từng giai đoạn, mỗi giai đoạn cần phải có một cách nuôi dạy khác nhau, cần phát triển các môn khoa học, ngoại ngữ.\n\nPhương pháp dạy học được đưa ra trong cuốn sách cũng rất tiến bộ, đó là học để hiểu và học để khơi gợi sự hứng thú chứ không phải học thuộc.\n\nMình thích và ấn tượng nhất với phương pháp dạy ngoại ngữ mà tác giả đưa ra, bởi nó vẫn hoàn toàn đúng trong xã hội bây giờ: “Những giờ học tiếng nước ngoài thì nhất định nói tiếng nước ngoài, đừng chêm tiếng ta vào. Làm cho trẻ nghĩ thẳng bằng tiếng ngoài, không giải dịch. Muốn thế thì hỏi từ chuyện dễ sau hãy đến khó.”\n\nCuối cùng, tác giả đưa ra những cách để khuyến khích các hình thức học tập vui vẻ nhưng cũng rèn luyện cả trí và thể như đi dã ngoại, hát, diễn kịch, chơi trò chơi.\n\nTuy nhiên, có một điều mình không thích ở cuốn sách này đó là tác giả (hoặc người đánh máy) đã viết sai chính tả một vài từ như “xâu sắc” (sâu sắc). Ngoài ra, có nhiều từ cổ cũng ảnh hưởng đến quá trình đọc hiểu nội dung của cuốn sách. Nhưng mình tin bạn biên tập viên của Nhã Nam, người đã từng học cao học về Hán Nôm sẽ giải quyết được vấn đề này (dù mình chưa đọc bản tái bản của Nhã Nam).\n\nThực sự thì mình không thể nói hết được tất cả những gì cuốn sách nhắc đến trong một bài viết ngắn thế này. Chúc các bạn sớm có được những phút giây thật tuyệt vời khi đọc cuốn sách này!\n\n\nHighlights I like (in Vietnamese)\n\n    \n      Chúng ta mà muốn, thì chúng ta có thể đổi hẳn tương lai nòi giống. Chỉ mười năm, phải, mỗi người chỉ tận tụy mười năm, là một thế hệ thanh niên sẽ đổi khác. Huống hồ đời giáo dục của chúng ta ba mươi năm, hay hơn nữa. Đó không phải là mơ mộng. Sự thực ai cũng làm được, mà ai cũng phải làm mới được.\n    \n\n    \n      Việc sửa soạn thi các văn bằng dù người ta coi đó làm cái thước đo ông thầy, chúng ta chỉ nên coi nó làm một cách thử sức thôi. Lúc bảo học không cần để tâm đến việc thi. Không bị kỳ thi dọa nạt thì khỏi nô lệ cái học, trí dễ mở, dễ hấp thụ. Nếu tìm được cách làm cho học trò ham học, học cho biết, học vì thích, thì các môn học sẽ thấm thía sâu, ở bền trong óc.\n    \n\n    \n      Những giờ học tiếng nước ngoài thì nhất định nói tiếng nước ngoài, đừng chêm tiếng ta vào. Làm cho trẻ nghĩ thẳng bằng tiếng ngoài, không giải dịch. Muốn thế thì hỏi từ chuyện dễ sau hãy đến khó."
+					}
+					
+				
+			
+		
+			
+				
+					,
+					
+					"thought-roi-ha-noi-se-con-lai-nhung-dieu-chi": {
+						"id": "thought-roi-ha-noi-se-con-lai-nhung-dieu-chi",
+						"title": "Rồi Hà Nội sẽ còn lại những điều chi?",
+						"categories": "thought",
+						"tags": "feeling, paris, hanoi, memoirs",
+						"url": " /thought/roi-ha-noi-se-con-lai-nhung-dieu-chi",
+						"content": "Rời quán café trên phố Nguyễn Biểu, chúng tôi lặng lẽ chia tay nhau giữa dòng người đông đúc. Đầu tôi vương lại câu hỏi ngỏ của Bảo Ngọc: “Liệu chúng mình còn có thể gặp nhau bên trời Âu được không nhỉ?” Tôi cười, không trả lời cô, nhưng trong lòng thì lại không ngừng mong chờ ngày ấy.\n\nHôm nay, Paris giảm một độ. Mùa hạ sắp qua. Mưa rả rích. Lưa thưa vài người. Công ty. Tôi. Màn hình máy tính. E-mail của sếp. Một đống ngổn ngang.\n\nĐiện thoại rung…\n\n“Này Quý, mong ước của chúng mình sắp thực hiện được rồi. Cuối tháng 8 này tớ qua Lyon học M2. Không những là trời Âu mà còn cùng là Pháp nữa nhé!” Tôi không giấu nổi niềm vui lúc này. Cô nàng Ngoại Thương tôi tình cờ quen biết đã chạm tay đến giấc mơ của cô ấy. “Ừ, mảnh đất lục lăng luôn chờ đón cậu!”, “và tớ cũng như vậy!”. Nhưng tôi chỉ nói vế đầu của câu kia.\n\nĐiện thoại rung…\n\n“Thứ 6 tuần sau tao bay sang Mỹ rồi!” Dù biết trước là nó sẽ đi nhưng trong lòng tôi vẫn còn chút vương vấn.\n\n“Tối đi làm về tao call.” Tôi trả lời nó.\n\n“Tao giờ bận lắm. Nhiều thứ phải chuẩn bị. Qua đó, tao sẽ call cho mày ngay.”\n\nCái thằng ngày nào vẫn còn hậm hực mỗi lúc tôi nhờ nó chuyển nhà. Rồi thuốc thang, nấu nướng, giặt giũ lúc tôi ốm. Giờ đây, nó cũng chạm tới giấc mơ mà nó hằng mong ước rồi.\n\nĐiện thoại rung…\n\n“Anh về với em luôn được không?!” Giọng em có vẻ nhõng nhẽo.\n\n“Ít nhất thì anh cũng phải hoàn thành xong chương trình đang học đã chứ!”\n\n“Không cần! Về đây đi!”\n\n“Anh chưa đủ tự tin để về bên em!” Dòng tin nhắn này tôi viết rồi lại xoá đi. Thay vào đó, tôi gửi: “Về em nuôi anh à? =)))”\n\n“Không! Bảo mẹ em nuôi =)))!”\n\nTôi không tập trung được nữa. Lướt qua vài trang báo tôi hay đọc và mục điểm sách tôi hay xem. Tôi dừng lại ở dòng tin “Nhã Nam Books N’ Coffee Times City sẽ dừng hoạt động.”\n\nMưa vẫn rơi.\n\nNhững giọt nước đọng trên cửa kính như đầy luyến lưu.\n\nNhắm mắt…\n\nSấu chín,\n\ngiấu điều thầm kín,\n\nngọt rồi lại chua.\n\nTrở về phố xưa,\n\nthơm lừng hoa sữa.\n\nThêm điều nhỏ nữa…\n\nNhững chiều nhớ mong\n\nnhững gánh hàng rong,\n\nđôi vai nặng trĩu,\n\nmang phần bận bịu\n\ngóc nhỏ đìu hiu.\n\nTôi.\n\nMở mắt…\n\n“Rồi Hà Nội sẽ còn lại những điều chi?”\n\n09/08/2019\n\n_ Po _"
+					}
+					
+				
+			
+		
+			
+				
+					,
+					
+					"thought-the-grand-ole-opry": {
+						"id": "thought-the-grand-ole-opry",
+						"title": "The Grand Ole Opry và dòng nhạc Country",
+						"categories": "thought",
+						"tags": "feeling",
+						"url": " /thought/the-grand-ole-opry",
+						"content": "Khi tôi muốn viết vài câu về thể loại nhạc mình thích, có một mẩu chuyện nhỏ hiện ngay lên trong đầu tôi. Cách đây vài tháng, tại “Bar Le Monsieur”, tôi ngồi uống cùng Joe và Anthony. Cô gái bồi bàn tới gần hỏi chuyện và có vẻ thích thú khi thấy ba đứa tôi ngồi cùng nhau (nó làm tôi liên tưởng đến cuốn “Ba gã cùng thuyền” của Jerome, một cuốn sách hài hước, hóm hỉnh mà bạn có thể đọc). Đơn giản là vì Anthony, chàng trai người Pháp lịch lãm, có một điệu cười rất giống Vũ - bạn đại học của tôi; và Joe, một chàng điển trai người Mỹ đang ngồi say sưa tám chuyện với một tên nhỏ con người Việt. Nhìn cái không khí ấy, hẳn sẽ có người so sánh với hình ảnh chiến tranh mấy chục năm về trước.\n\n- Này Quý, mày thích nghe thể loại nhạc gì nhất? Anthony hỏi tôi.\n\n- Nhạc á, chắc là Country! Tôi cười và đáp lại.\n\n- Mày già hơn so với tuổi đấy. Mặc dù nó xuất phát từ Nam Mỹ nhưng tao không thích nó lắm. Joe nhìn tôi rồi cười. Điều này làm tôi nghĩ đến việc tôi cũng chẳng húng thú gì với việc nghe cải lương hay hát bội ở Việt Nam cả.\n\n- Nhưng tại sao lại là nhạc Country? Anthony tiếp lời.\n\nĐúng, tại sao lại là dòng nhạc Country cơ chứ? Trong một thế giới âm nhạc phong phú, để tìm một thể loại nhạc mình yêu thích và cảm nhận được quả thực là rất khó. Tôi thích những bài hát có mélodie nhẹ nhàng bao nhiêu thì lại thích từng con chữ trong mỗi paroles bấy nhiêu. Và dòng nhạc Country đã đáp ứng được mong đợi của tôi về cả hai khía cạnh đó. Mỗi bài hát lại ấp ủ một câu chuyện trong đó; có khi chỉ là một ngày đẹp trời, có khi khi là một phần của tuổi trẻ, nhưng có khi nó là câu chuyện âm ỉ trong cả cuộc đời con người. Càng nghe, càng tìm hiểu thì lại trân trọng chúng hơn.\n\nMột câu hỏi đặt ra rằng bạn đã bao giờ nghe nhạc Country chưa? Nhiều người sẽ trả lời ràng chưa, nhưng thực tế, chúng ta ít nhất đã từng nghe một vài bài mà chúng ta không biết nó thuộc thể loại này. Một ví dụ điển hình là bài Remember when của Alan Jackson. Bài hát đã làm tăng thêm rất nhiều giá trị cho bộ phim Up (2009). Trong bài hát đó, Alan Jackson kể những lần đầu ông gặp vợ của mình, cả hai cùng còn trẻ, phải học cách để sống trong một mối quan hệ nghiêm túc, cùng nhau trải qua vui buồn. Những người già qua đời (bố mẹ, họ hàng), và cái mới đã ra đời. Đó là vòng tròn của cuộc sống, khi một thế hệ chết đi, thế hệ mới bắt đầu. Alan Jackson và vợ kết hôn năm 1979, 19 năm sau họ ly thân được vài tháng do sự nghiệp và sự không chung thủy của Alan nhưng họ đã làm hòa với nhau vì lý do chính là ba người con gái của họ. Kể cả khi Alan không chung thủy nhưng tình yêu của họ và tình yêu dành cho con cái của họ mạnh mẽ hơn bao giờ hết. Khi con cái lớn lên và rời xa vòng tay của họ, họ sẽ cùng nhau đối mặt với điều đó và nhớ lại những lần vui buồn từng trải qua. Cả hai đã thề với nhau rằng họ sẽ bên nhau mãi mãi qua tuổi già và mọi thứ, dù thế nào đi chăng nữa. Đó là những điều mình tìm hiểu được về bài hát này của Alan. Đằng sau đó là một câu chuyện chẳng phải của riêng ai.\n\n\n    \n\n\n    \n\n\nNói đến dòng nhạc Country thì không thể không nhắc đến những buổi trình diễn tại Grand Ole Opry. Nó được coi là ngôi nhà của những nhạc sĩ dòng nhạc Country. Khi nhắc tới Grand Ole Opry, tôi lại có thêm một thứ để ghi vào bucket list của mình: Đi xem một show tại Grand Ole Opry!.\n\nMột bài hát mà tôi cũng rất thích là Walkaway Joe được Carrie Underwood và Kelsea Ballerini thể hiện tại Grand Ole Opry. Đây là một bản hit của Trisha Yearwood kể về câu chuyện giữa một cô gái 17 tuổi và một chàng thieving drifter. Và tôi cũng rất thích một bình luận trên Youtube về bài hát này: We all have a walk away joe somewhere in my life.\n\n\n    \n\n\n    \n\n\nRồi lại thêm một câu chuyện trong He Stopped Loving Her Today của George Jones. Một chàng trai bảo với cô gái rằng: I’ll love you til I die nhưng nhận được câu trả lời của cô gái rằng You’ll forget in time. Và lần đầu Jones thấy anh ấy cười sau nhiều năm, nhưng đó cũng là lần anh ấy ra đi mãi mãi…\n\n\n    \n\n\n    \n\n\nBạn cũng có thể nghe thêm nhiều bài khác nữa trong danh sách yêu thích của tôi như Ho Hey hay Five More Minutes…\n\nỞ Việt Nam, Tạ Quang Thắng là ca sĩ nổi tiếng với dòng Country Rock - một thể loại cũng liên quan đến dòng nhạc Country. Những bài hát như Lá Cờ, Sống Như Những Đóa Hoa hay Viết Tình Ca đã gắn liền với quãng thời gian tham gia hoạt động tình nguyện cũng như học đại học của tôi. Gần đây, anh cũng đã ra mắt một bài hát mới cũng rất dễ chịu - Sẽ Không Yêu Thêm Ai.\n\n\n    \n\n\n    \n\n\nĐó là tất cả những gì cần thiết trong bài viết nho nhỏ này!\n\nAnd you, what is your favorite music?\n\n_ Po _"
+					}
+					
+				
+			
+		
+			
+				
+					,
+					
+					"reading-linh-nam-chich-quai": {
+						"id": "reading-linh-nam-chich-quai",
+						"title": "Lĩnh Nam Chích Quái",
+						"categories": "reading",
+						"tags": "fiction",
+						"url": " /reading/linh-nam-chich-quai",
+						"content": "Information\n\n\n  Version I read: Vietnamese\n  Title in Vietnamese: Lĩnh Nam Chích Quái\n  Genre: Huyền thoại, huyền sử Việt Nam\n  Author: Trần Thế Pháp\n  Published: Nhà xuất bản Kim Đồng\n\n\n\nBelow comments are in Vietnamese, please wait for an English version.\n\nBây giờ, nếu như được hỏi môn học nào trong nhà trường thời phổ thông khiến cho mình e ngại nhất, thì có lẽ mình không cần phải nghĩ mà sẽ ngay lập tức trả lời rằng đó là môn lịch sử. Chúng ta cũng đã từng nghe những câu chuyện như là thiếu niên Việt nhầm tưởng rằng Quang Trung và Nguyễn Huệ là hai bố con, hay như là chính MC trên sóng truyền hình quốc gia lại nhầm lẫn giữa tướng Ngô Quyền và Trần Hưng Đạo, đã khiến cho nhiều người không khỏi giật mình.\n\nDo đó, khi cầm trên tay cuốn sách Lĩnh Nam Chích Quái này, mình vừa vui mừng nhưng cũng vừa lo lắng. Vui mừng vì mình chắc chắn sẽ biết thêm những điều hay ho và mới mẻ như khi mình cầm trên tay bất kì cuốn sách nào khác. Lo lắng vì liệu rằng mình có hiểu sai về những mẩu truyện quen thuộc như Âu Cơ Lạc Long Quân, Thánh Gióng hay Bánh Chưng Bánh Giày mà mình đã biết từ ngày còn nhỏ hay không?\n\nNói sơ qua một chút về Lĩnh Nam Chích Quái. Đây là một danh tác văn học trung đại và được coi là báu vật trong di sản văn hoá của Việt Nam. Vì thế nó chiếm một vị trí quan trọng và có ảnh hưởng lớn tới đời sống tinh thần của dân tộc Việt suốt nhiều thế kỉ qua. Ngoài những cái tên quen thuộc, gắn liền với lịch sử tồn tại nhiều thế kỉ của tác phẩm kinh điển này như danh sĩ đời Trần, Trần Thế Pháp; người sưu tầm và biên soạn, Vũ Quỳnh, Kiều Phú; hai người hiệu đính hay còn hai dịch giả Đinh Gia Khánh, Nguyễn Ngọc San. Ấn bản lần này còn có tên hoạ sĩ Tạ Huy Long với vai trò là hoạ sĩ vẽ minh hoạ. Gần 200 bức tranh minh hoạ cho 36 truyện tích thần kì về lịch sử dân tộc, phong tục tập quán, đối nhân xử thế của cha ông là kết quả của một quá trình lao động kì công của người hoạ sĩ này trong suốt sáu tháng. Lĩnh Nam Chích Quái ấn phẩm đặc biệt, kỉ niệm 60 năm ngày thành lập của nhà xuất bản Kim Đồng, thực sự đã làm tăng thêm rất nhiều giá trị cho tác phẩm xa xưa này. Bằng chứng là chỉ một tháng sau khi xuất bản, tác phẩm phải in tái bản tới ba lần vì cháy hàng (mặc dù cái giá của mỗi cuốn cũng khiến cho nhiều người phải nâng lên đặt xuống).\n\nVậy có gì đặc biệt trong ấn phẩm lần này của nhà xuất bản Kim Đồng? Hãy cùng tìm hiểu nó thông qua sự kiện Café Sách được tổ chức tại Paris cuối tháng 5/2019 nhé!\n\n\nHighlights I like (in Vietnamese)\n\n    \n      (update later)"
+					}
+					
+				
+			
+		
+			
+				
+					,
+					
+					"tutorial-shortcut-for-mac-os": {
+						"id": "tutorial-shortcut-for-mac-os",
+						"title": "Shortcuts for Mac OS's Users",
+						"categories": "tutorial",
+						"tags": "admin, mac os",
+						"url": " /tutorial/shortcut-for-mac-os",
+						"content": "This post is in Vietnamese, please wait for an English version.\n\n\n\n  \n    In this post\n  \n  \n\n  App and Window\n  App bị kẹt, đơ\n  Chuyển giữa các app đang chạy\n  Copy, cut, paste, select all, undo, redo\n  Cut, đổi tên và xoá file\n  Tab\n  Nhảy lên đầu hoặc cuối của tài liệu\n  Mở Options / Settings / Preferences của bất kì ứng dụng nào\n  Tìm kiếm tất cả mọi thứ\n  Chuyển giữa các desktop với nhau\n  Screenshot\n  Lock máy nhanh\n\n\n  \n\n\nMột số shortcut hữu dụng khi sử dụng Mac OS.\n\nApp and Window\n\n\n  command + W: Đóng cửa sổ của ứng dụng đang chạy nhưng không thoát hẳn.\n  command + Q: Thoát hẳn ứng dụng đang chạy, mọi thứ chưa lưu sẽ mất.\n  command + H: Ẩn cửa sổ khỏi màn hình. Bấm vào icon trên dock để hiện lại.\n  command + M: Thu nhỏ cửa sổ, chạy lại bằng cách bấm vào nó trên thanh dock.\n\n\nApp bị kẹt, đơ\n\nNếu app không phản hồi ngay cả khi bạn đã nhấn command + Q, app đã bị đơ.\n\n\n  Nhấn command + option + esc để hiển thị Force Quite Applications.\n  Chọn đóng app nào đó đang bị đơ.\n\n\nChuyển giữa các app đang chạy\n\n\n  command + tab, một thanh switcher sẽ hiển thị trên màn hình, tiếp tục bấm command + tab để chọn app mong muốn.\n  Tay còn giữ phím command thì thanh switcher còn hiện, bỏ ra là ẩn đi.\n  Để di chuyển ngược lại, nhấn command + shift + tab.\n\n\nCopy, cut, paste, select all, undo, redo\n\nTất cả phím control bên Win sẽ thay bằng Command bên Mac:\n\n  command + C để copy.\n  command + X để cut (không áp dụng cho file, mời xem bên dưới).\n  command + V để paste.\n  command + A để select all.\n  command + Z để undo.\n  command + Y hoặc command + shift + Z để redo, cái này tùy app.\n\n\nCut, đổi tên và xoá file\n\nCut file (không khuyến khích dùng vì lỡ trong quá trình cut mà xảy ra lỗi thì nguy cơ hỏng file cao):\n\n  Nhấn command + C để copy file trước.\n  Tới nơi định dán xuống, nhấn command + option + C để paste.\n\n\nĐổi tên file\n\n  Chọn file $\\to$ nhấn return $\\to$ nhập tên $\\to$ nhấn return lần nữa để hoàn tất.\n\n\nXoá file: command + delete để xóa file vào thùng rác.\n\nTab\n\nVới những app hỗ trợ chia theo tab, ví dụ như Safari, Chrome, Firefox, Finder…\n\n  command + T để mở tab mới.\n  command + shift + T để mở lại Tab vừa mới đóng (do nhỡ tay hoặc tắt nhầm Tab đó).\n  control + tab để chuyển giữa các tab với nhau.\n  option + Click lên dấu $\\times$ ở tab để đóng hết tất cả tab khác, giữ lại tab mà bạn đã click lên.\n  command + Z để undo khi lỡ đóng nhầm tab nào đó (tương tự như command + shift + T).\n\n\nNhảy lên đầu hoặc cuối của tài liệu\n\n\n  command + $\\downarrow$ (mũi tên xuống): nhảy đến cuối tài liệu đang mở.\n  command + $\\uparrow$: nhảy đến đầu trang tài liệu đang mở.\n\n\nMở Options / Settings / Preferences của bất kì ứng dụng nào\n\n  command + ,\n  Thường thì bạn cũng có thể truy cập Preferences bằng cách nhấn vào tên app trên menu bar $\\to$ Preferences.\n\n\nTìm kiếm tất cả mọi thứ\n\ncommand + space: mở hộp thoại tìm kiếm.\n\nChuyển giữa các desktop với nhau\n\nMacOS cho tạo nhiều desktop ảo: control + số &lt;1&gt; &lt;2&gt; &lt;3&gt; để chuyển giữa những desktop này (con số tương ứng với vị trí desktop ảo).\n\nScreenshot\n\n  command + shift + 3: chụp toàn màn hình.\n  command + control + shift + 3: copy ảnh chụp màn hình vào clipboard, sẵn sàng paste vào các app khác.\n  command + shift + 4: chọn vị trí mong muốn để chụp ảnh màn hình.\n  command + shift + 5: chụp ảnh màn hình với nhiều tuỳ chọn rất hữu ích (chỉ có trên Mac OS Mojave).\n\n\nLock máy nhanh\n\ncontrol + shift + nút nguồn: lock màn hình."
+					}
+					
+				
+			
+		
+			
+				
+					,
+					
+					"thought-midnight-in-paris": {
+						"id": "thought-midnight-in-paris",
+						"title": "Midnight in Paris",
+						"categories": "thought",
+						"tags": "feeling, paris, vivu",
+						"url": " /thought/midnight-in-paris",
+						"content": "Người ta vẫn nói Paris là kinh đô ánh sáng, vậy nên chắc hẳn Paris về đêm chắc sẽ đẹp lắm nhỉ? Tôi thích dùng các từ kiểu như “lãng mạn”, “nhẹ nhàng” thay vì “sexy” khi nói đến Paris về đêm. Cảm giác đứng trên Khải Hoàn Môn (L’arc de triomphe de l’Étoile), lúc trăng đã lên cao để ngắm nhìn Paris thơ mộng thật là tuyệt. Lúc chúng tôi chụp bức ảnh này cũng là khi có một đôi bên cạnh đang trao nhau những nụ hôn thắm thiết. Tôi cũng muốn một lần trong đời thử cảm giác ấy, nhưng không phải ở Khải Hoàn Môn mà là ở tháp Eiffel.\n\n\n  \n    \n\n\nMột số video và ảnh tại hội chợ Noel tại Jardin des Tuileries (gần bảo tàng Louvre).\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n    \n\n\n    \n\n\n\n    \n\n\n    \n\n\nP/s. Cảm ơn các bạn đã đi cùng mình và đặc biệt cảm ơn tới Trang đã chụp bức ảnh tháp Eiffel rất đẹp nhìn từ Khải Hoàn Môn."
+					}
+					
+				
+			
+		
+			
+				
+					,
+					
+					"thought-la-defense": {
+						"id": "thought-la-defense",
+						"title": "Le Marché de Noël de la Défense",
+						"categories": "thought",
+						"tags": "feeling, paris, vivu",
+						"url": " /thought/la-defense",
+						"content": "Một buổi tối cuối tuần như mọi khi, chúng tôi lại tìm đến nhau sau một tuần học đầy căng thẳng và mệt mỏi. Hôm nay, ngày đầu tiên của tháng cuối cùng năm 2018, vi vu tại La Defense, chúng tôi đã tìm đến chợ Noel.\n\n\n  \n    \n\n\nCó thể bạn đã biết (hoặc chưa), La Défense là một khu vực đô thị nằm ở ngoại ô thành phố Paris. Đây là khu phố văn phòng quan trọng bậc nhất châu Âu, với nhiều nhà chọc trời, tập trung những công ty lớn hàng đầu Pháp cũng như thế giới. Nằm ở Neuilly-sur-Seine thuộc Hauts-de-Seine, La Défense là điểm kéo dài của Axe Historique được bắt đầu từ bảo tàng Louvre trong trung tâm Paris, tới đại lộ Champs-Élysées, Khải Hoàn Môn rồi thẳng đến Grande Arche.\n\n\n\n\n\n\n\n\n\n\n\n\n\nCũng như mọi chợ truyền thống khác, gian hàng không thể thiếu được đó là gian hàng bày bán “fromage”. Thú thực mà nói, tôi chẳng khoái gì cái mùi vị của nó. Nhưng giống như người Việt thích ăn “bún đậu mắm tôm” thì “fromage” cũng đã ăn sâu vào tiềm thức của người Pháp.\n\n\n  \n    \n\n\nChợ Noel đẹp như những gì tôi từng mong đợi. Bởi trong cái thời tiết mưa gió và giá lạnh ở Paris, người ta vẫn tìm đến bên nhau và chia sẻ với nhau những điều tốt đẹp trong tháng cuối cùng của năm cũ. Những gian hàng đầy màu sắc và cũng đầy đủ những thứ chúng ta cần. Đơn giản thì là bánh kẹo, đồ ăn nhanh (chúng tôi đã móc hết những đồng xu cuối cùng còn sót lại để mua được vài miếng gà quay, vài thanh phô mai que và một hộp bánh ăn sống dở, chết dở). Tiện lợi thì là quần áo, giầy dép đủ loại đáng yêu. Hừm. Phức tạp hơn thì là một chút nghệ thuật mà chúng tôi cũng chẳng hiểu rõ về chúng.\n\n\n\n\n\n\n\n\n\n\n\n\n\nNói đến Pháp mà không nhắc đến những quán ăn nhanh cùng một chút rượu nhâm nhi thì thật là uổng phí. Không nhiều nhưng gian hàng này cũng làm nổi thêm cho hội chợ Noel.\n\n\n  \n    \n\n\nHình ảnh đầu tiên hiện ra khi tôi chụp bức ảnh này đó là Hà Nội - một chút sâu lắng, một chút nhẹ nhàng nhưng đôi phần bình dị.\n\n\n  \n    \n\n\nVà nhắc đến Noel thì không thể thiếu hình tượng đáng yêu này rồi. Ai lấy trộm mấy chú tuần lộc thì trả cho ông già Noel còn đi phát quà. =)))\n\n\n  \n    \n\n\nÀ đấy, cứ nói linh tinh mà quên mất chưa giới thiệu ba người bạn đồng hành cùng tôi hôm nay.\n\n\n\n\n\n\n\n\n\n\n\n\n\nCó thể đôi lúc, mọi thứ không được như ý bạn mong muốn như việc người ta chỉ chú ý đến toàn thể bức ảnh mà quên mất có ba gương mặt xinh xắn xuất hiện trong đó. Nhưng thôi đừng buồn, cuộc sống cũng vậy, có lúc rõ ràng, có lúc mờ ảo; thay vì ngán ngẩm với nó, tại sao ta lại không nghĩ đến những điều tốt đẹp hơn cơ chứ?\n\n\n  \n    \n\n\nVà hãy nhớ rằng, dù có chuyện gì xảy ra đi nữa, hãy luôn giữ mãi nụ cười này trên môi nhé bạn của tôi.\n\n\n  \n    \n\n\nP/s. Không hiểu sao tôi lại quay thêm cái video này nữa, nó chẳng có ý nghĩa gì cả (và thực tế thì chúng ta đã rất nhiều lần làm những điều vô nghĩa đó thôi)."
+					}
+					
+				
+			
+		
+			
+				
+					,
+					
+					"tutorial-fdtd-pe-model": {
+						"id": "tutorial-fdtd-pe-model",
+						"title": "Finite-Difference Time-Domain Method",
+						"categories": "tutorial",
+						"tags": "math",
+						"url": " /tutorial/FDTD-PE-Model",
+						"content": "I’m not a native English speaker, please ignore my bad expressions. This post is not complete, it will be improved later.\n\n\n  \n    In this post\n  \n  \n\n  FDTD Method\n  PE Method\n  FDTD-PE Method\n\n\n  \n\n\nIn this post, I will show you the basic hybrid model: FDTD-PE.\n\nYou can also see details in the artical of Timothy Van Renterghem.\n\nAn efficient hybrid model is presented for sound propagation in situations with several reflecting obstacles near the source. A Finite-Difference Time-Domain (FDTD) model is used in the complex source region, while a Parabolic Equation (PE) model is used for propagation to a distant receiver. The models are coupled by transformation of FDTD results at the boundary of the source region from the time domain to the frequency domain. The FDTD-PE model takes into account multiple reflections of sound waves in the source region, and interaction of sound waves with complex wind fields near the obstacles. It is shown that the FDTD-PE model is accurate, and requires considerably smaller computer times and memory than FDTD does.\n\nFDTD Method\n\n1.1. Linearized Euler Equations (LEEs)\n\nSet of 2 coupled equations to solve:\n\n\n\n1.2. Conservative form of the LEEs in 2D with source terms\n\n\n1.3. Discretization in time and space\n\n  Set the initial conditions \n  Compute the spatial derivatives of the Eulerian fluxes to evaluate \n  Advance the solution in time to obtain \n  Repeat the previous steps until we obtain \n\n\nTo solve the LEEs we need to choose a numerical differentiation method (Finite Differences) and a time-integration method (Runge-Kutta algorithms). We call these methods FDTD for “Finite-Difference Time-Domain”.\n\nPE Method\n\nWe use a 2D version of the FDTD model, based on the 2D Euler equations.\n\nYou can read the book “Computational atmospheric acoustics” of Salomons to know more details\n\nFDTD-PE Method\nCoupling: the Finite-Difference Time-Domain (FDTD) method and the Parabolic Equation (PE) method."
+					}
+					
+				
+			
+		
+			
+				
+					,
+					
+					"thought-mau-chuyen-vun-vat-voi-di-chip": {
+						"id": "thought-mau-chuyen-vun-vat-voi-di-chip",
+						"title": "Mẩu chuyện nhỏ với dì Chíp",
+						"categories": "thought",
+						"tags": "feeling, hanoi, memoirs",
+						"url": " /thought/mau-chuyen-vun-vat-voi-di-chip",
+						"content": "Buổi tối trước khi xa nhà lần thứ hai, tôi nói chuyện với dì Chíp. Chia sẻ kế hoạch tương lai rồi lại quay sang nói chuyện quá khứ…\n\n– Chẹp! Ngày ấy sướng nhể! Hứng lên là quán xá! Lại còn cà phê nghe nhạc! Nhắc đến cứ như là quá khứ của thế kỉ trước! Dì Phù Thuỷ mày đã 30 tuổi rồi! Dì Chíp nói một hồi.\n\n– Vâng, dì cũng 28 rồi còn gì. Tôi đáp. Cháu thì mới “chập chững bước đi”.\n\n– Thời gian chẳng dài mà cũng chẳng ngắn. Mà quên đi lâu quá, cảm giác như là lâu lắm rồi.\n\n– Dù sao thì cháu sẽ cố gắng sắp xếp thời gian tươi đẹp ấy lại cẩn thận.\n\n– Ừ. Mỗi ngã rẽ đều rất rất khác biệt. Từ lúc nhỏ cho tới lúc lớn. Từ trung học sang đại học. Từ đại học rồi lập nghiệp. Từ độc thân sang cuộc sống gia đình. Từ vợ chồng son sang việc làm cha mẹ. Rồi cứ thế lại đồng hành cùng con. Cũng lại những ngã rẽ như thế. Cảm nhận và chủ động trước mỗi ngã rẽ. Ổ gà, ổ voi trên mỗi chặng đường không hề ít nhé. Nhưng vấp rồi vẫn cứ phải đứng lên. Mà, đến lúc về chắc khác lắm rồi!\n\n– Vâng, giờ như trẻ lớn bước vào đời. Nhưng lần này đi cháu cảm thấy buồn, không còn vui và háo hức như lần trước.\n\n– Vì chưa biết ngày về chứ sao. Không còn mới mẻ như trước nữa. Khác quá ấy chứ. Nhưng mà yên tâm. Bố mẹ mày còn trẻ lắm. Còn nhiều cơ hội báo đáp…\n\nMột mẩu nhỏ nhỏ trong cuộc nói chuyện ấy thôi cũng khiến tôi cảm thấy mình khác hẳn. Dù rằng tôi không định nghĩa được thứ cảm xúc đó là gì.\n\n_ Po _"
+					}
+					
+				
+			
+		
+			
+				
+					,
+					
+					"thought-truoc-khi-xa-nha": {
+						"id": "thought-truoc-khi-xa-nha",
+						"title": "Trước khi xa nhà",
+						"categories": "thought",
+						"tags": "feeling, paris, hanoi, memoirs",
+						"url": " /thought/truoc-khi-xa-nha",
+						"content": "Có lẽ bạn cũng giống như tôi, đều biết rằng, hai “shark” đã đầu tư cho mình nhiều nhất, chưa bao giờ lấy lãi, cũng chẳng bao giờ đòi vốn, không ai khác, chính là bố mẹ.\n\nBố tôi cung Cự Giải, mẹ tôi cung Thiên Yết. Tôi và em gái, lớn lên trong một gia đình như vậy, được chở che bởi cơn “đại hồng thuỷ” (nước + nước). Một người đàn ông lãnh đạm, đôi chút gia trưởng, giấu tiệt mọi thứ sau sự im lặng và một người đàn bà luôn thể hiện sự giận dữ ra mặt, từ chối mọi yêu cầu của những đứa trẻ hư như chúng tôi, nhưng lại vô cùng yêu thương con cái.\n\nTôi ghét nhất mỗi khi cái không khí trong gia đình trở nên im lặng. Bố tôi ít nói, thường thể hiện mọi thứ qua hành động và ánh nhìn. Mẹ tôi lại có một sự bận rộn riêng của mình, là người lúc nào cũng lo hết phần của người khác. Tôi và em gái không phải là những đứa con được nuông chiều. Trong cái không khí im lặng đấy, tôi và em đều biết rằng, không phải chúng tôi đã làm sai điều gì mà là chúng tôi đã không đáp ứng được những kì vọng của bố mẹ.\n\nBố mẹ không phải người đầu tiên dạy tôi những kiến thức về cuộc đời. Nhưng khi lớn lên, và cho đến tận bây giờ, có hai điều mà tôi may mắn được thừa hưởng từ hai người. Đó là sự kiên nhẫn của bố và lòng bao dung của mẹ. Bố tôi là kiểu người dù cho công việc có nặng nhọc, vất vả đến đâu, cũng không bao giờ than vãn với con cái nửa lời. Dù tôi và em gái đều biết, những việc làm đó là vì chúng tôi. Mẹ tôi là một người tuy nghiêm khắc với con cái nhưng lại rất hiền. Ngày bố tôi đi làm xa, mẹ lo hết các công việc bên nội, bên ngoại và chăm lo cho cả chúng tôi nữa. Thế mới thấy, sức cáng đáng của mẹ là lớn đến nhường nào và bố đã tin tưởng mẹ ra sao.\n\nHồi còn nhỏ, có lần tôi nói dối, xin tiền mẹ đi mua phấn nhưng thực chất là đi ăn quà. Mẹ tôi phát hiện ra, đánh tôi một trận đau đớn. Bố tôi cũng vậy, luôn dành cho tôi những trận đòn khi tôi nũng nịu, không chịu làm việc chăm chỉ, dù đó chỉ là việc đơn giản như quét thóc. Ngày ấy, tôi ghét hai người lắm. Nhưng đến bây giờ, ở cái tuổi bắt đầu tự lập, tôi lại thấy biết ơn bố mẹ, vì nếu hai người không làm những hành động nghiêm khắc ấy thì đã chẳng có tôi ngày hôm nay.\n\nCũng giống như bao đứa trẻ mới lớn khác, tôi cũng luôn gây ra những cuộc cãi vã trong gia đình ở cái độ tuổi ấy. Dù cho nhiều lần bố mẹ sai thật, nhưng tôi vẫn bị mắng te tua, nhiều khi ức quá mà chỉ biết trực chờ khóc. Nhưng lớn dần, tôi hiểu ra rằng, cần phải mềm mỏng trong việc giao tiếp ở gia đình, điều này quan trọng biết bao. Tôi cũng vui khi bố mẹ đồng lòng với nhau để mắng tôi vì tôi biết rằng, đến một ngày nào đó, tôi sẽ bay đi xa, còn bố mẹ sẽ sống cùng nhau và đồng lòng với nhau đến cuối đời.\n\nTôi muốn tìm một người phụ nữ mạnh mẽ như mẹ. Cô ấy không cần phải nữ công gia chánh, cũng chẳng cần phải mềm mỏng ngoại giao. Bởi vì những thứ đó, đơn giản, có thể học được.\n\nTôi biết những lần mẹ khóc khi bố đi làm xa, những lúc con cái không nghe lời nhưng tuyệt vời nhất là lúc chúng tôi làm mẹ khóc vì hạnh phúc.\n\nTôi có vẻ như muốn viết về mẹ thật nhiều. Như vậy chắc sẽ thiệt thòi cho bố. Nhưng như bố đã từng bảo: “Con trai, nên nói ít, làm nhiều. Thế là đủ!”\n\nTôi viết những dòng này khi vài tiếng nữa là bước chân lên máy bay. Nghĩ đến cảnh bố mẹ vun vén hết mọi thứ cho tôi, tôi chỉ biết nghẹn ngào và im lặng.\n\nTôi chưa một lần nói con yêu mẹ đến nhường nào, con muốn cảm ơn bố nhiều biết bao. Nhưng món quà ý nghĩa nhất mà tôi có thể dành cho bố mẹ chính là tương lai của tôi ở phía trước.\n\nTự nhủ rằng phải thật mạnh mẽ, thật can đảm và thật vững vàng. Chỉ vậy thôi!!!\n\n_ Po _"
+					}
+					
+				
+			
+		
+			
+				
+					,
+					
+					"thought-nam-ay": {
+						"id": "thought-nam-ay",
+						"title": "Năm ấy",
+						"categories": "thought",
+						"tags": "feeling, hanoi, memoirs",
+						"url": " /thought/nam-ay",
+						"content": "Tôi vẫn còn nhớ. Năm ấy, Hà Nội, một ngày cuối tháng 9, có một chàng trai phóng bạt mạng trên đường để kịp hẹn với một cô gái. Ngày ấy, cũng chàng trai này, khi thấy mọi người đi đều rẽ dọc, rẽ ngang (để tránh “chốt”) thì cậu ấy vẫn cứ đi thẳng (với suy nghĩ mình đi đúng luật thì lo gì chứ). Và cuối cùng, vẫn chàng trai đó đã được các chú công an giao thông hỏi thăm.\n\nCũng ngày ấy, tôi đèo bạn gái phóng vùn vụt qua những con đường ven hồ Tây, nghe tiếng gió lùa trong những tán lá ngả vàng, ngắm mặt trời lặn. Nhắm mắt lại, thấy mùi hương thoảng đưa trên vai, cảm nhận một làn tóc dài khẽ chạm vào má mà quên đi cái lạnh của mùa đông đang đến gần.\n\nNếu có người hỏi tôi, điều gì khiến tôi nhớ nhất trong cuộc tình ấy, thì tôi sẽ không ngần ngại mà trả lời rằng: đó chính là tương tư. Là khoảng thời gian chờ đợi từng tin nhắn đến nỗi buồn bực vì vừa nhận được tin nhắn khuyến mại. Là khoảng thời gian hai bàn tay vô tình khẽ chạm vào nhau thôi cũng đủ làm con tim loạn nhịp. Là khoảng thời gian mong chờ những buổi hẹn bất chợt từ đối phương…\n\nNếu có người hỏi tôi, thứ oái oăm nhất trong cuộc tình ấy là gì, tôi cũng sẽ không phải suy nghĩ mà trả lời rằng đó là cố chấp. Vì không được đáp lại tình cảm nên cố gắng trong vô vọng là điều bình thường. Nhưng mà khoan đã, cũng nhờ những lúc quên đi bản thân hay hy sinh vì tình cảm như vậy mới biết được tình cảm trong ta lớn đến thế nào, ta có thể chịu đựng tổn thương đến bao nhiêu. Cũng vì thế mà tôi không bao giờ cười cái sự cố chấp của mấy đứa bạn tôi, chỉ là họ cũng đang cố gắng hết mình để có được tình yêu to đẹp trong đời mình mà thôi.\n\nNếu có người hỏi tôi, câu nói nào làm cậu cảm thấy thoải mái nhất khi nhắc lại chuyện tình ấy. Có nhiều câu quá nên tôi sẽ chần chừ mà nói rằng: “Trong chuyện này, chúng ta chẳng ai sai cả.” Cô ấy nói đúng, chuyện chia tay, chung quy lại cũng chỉ là do chưa đủ yêu thương.\n\nCòn một điều nữa, nếu có người hỏi tôi có được bài học gì sau chuyện này, tôi sẽ nói rằng: đó chính là điểm dừng. Giống như việc điều chỉnh tốc độ để tránh lao vào chiếc xe đi chậm chạp ở phía trước thì bạn cũng nên nghĩ tới điểm dừng trong một mối tình không được như ý muốn. Điều đó quan trọng biết bao. Khi bạn tán tỉnh một cô gái khác mà trong lòng vẫn nghĩ về người cũ thì không nên một chút nào. Chẳng ai thèm một bát phở đã ăn dở cả nên hãy dừng lại để xem lại mình trước khi bắt đầu một cuộc tình mới.\n\nÀ mà nếu bạn có tò mò chút nữa, hỏi xem tôi gọi cô ấy là gì. Tôi cũng chẳng ngại mà công khai: bình yên - tôi gọi cô ấy như vậy, như cái cách mà cô hay nói với tôi: “Ở cạnh cậu, tớ luôn cảm thấy gần gũi, an toàn và ấm áp!”\n\n_ Po _\n\nP/s: Tặng bạn bài hát này: Ghét thì yêu thôi OST"
+					}
+					
+				
+			
+		
+			
+				
+					,
+					
+					"thought-mot-cam-nhan-nho-nho-ve-su-co-don": {
+						"id": "thought-mot-cam-nhan-nho-nho-ve-su-co-don",
+						"title": "Một cảm nhận nho nhỏ về sự cô đơn",
+						"categories": "thought",
+						"tags": "feeling, hanoi, memoirs",
+						"url": " /thought/mot-cam-nhan-nho-nho-ve-su-co-don",
+						"content": "Tôi đã từng bảo là không viết thêm gì nữa, nhưng khi nhìn cây bút đã bám bụi, những trang giấy trắng nằm buồn một góc trên giá sách như đợi chờ người quan tâm thì lòng tôi lại chẳng thể yên.\n\nỪ thì tôi lại lảm nhảm…\n\nNếu bạn đọc blog của tôi, thì hẳn sẽ biết đến bài “Viết cho những kẻ nghiện cô đơn”. Hôm nay vẫn chủ đề cũ thôi, đơn giản vì tôi lại thèm nó - cô đơn.\n\nCô đơn là cảm giác mà ai cũng phải trải qua trong cuộc đời. Là khi chia tay với mối tình đáng nhớ. Là lạc lõng giữa lũ bạn thành công. Là một mình trên con đường đi tới… Nhưng chỉ có cô đơn mới là lúc biết được trong thâm tâm mình muốn sống như thế nào nhất.\n\nBởi thế mà bây giờ, thay vì inbox “Đi xem phim không mày?” thì tôi lại thích đến rạp xem phim một mình, bên cạnh những đôi đang hạnh phúc tay trong tay. Tôi thích ngồi xem đến tận cuối, khi mọi người đã đứng dậy hết, khi màn chiếu chuẩn bị đến những dòng chữ cuối cùng. Và hôm nay, bộ phim tôi xem là xXx: Return of Xander Cage, một mình và tận hưởng những giây phút tuyệt vời của nó: “Trái đất có những thứ thật tuyệt vời, cháu hãy luôn giữ chặt nó trong tim nhé!” - Cage nói. (Không nhớ rõ câu này lắm và còn nhiều câu hay khác mà chưa kịp note trong đầu - trí nhớ kém).\n\nCũng bởi thế mà bây giờ, thay vì inbox “Đi cà phê không mày?” thì tôi lại thích tự pha cho mình một ly cà phê bên cạnh cuốn sách và đồng minh của nó là quyển sổ. Tôi thích việc ghi chép khi đọc sách, thích tóm tắt từng chương một, rồi tìm một câu hay nhất để nói về toàn bộ cuốn sách. Thử đi, bạn sẽ khám phá ra nhiều điều hay lắm.\n\nBất kể đi đâu, trong ba lô tôi luôn có một cuốn sổ và một quyển sách. Nó chẳng có gì to tát cả, nhưng mỗi khi có cơ hội, tôi lại phóng xe đến vài nơi ưa thích, dạo quanh những ngóc ngách, đọc vài trang sách và ngọ nguậy viết lách. Tôi chẳng phải nhà báo, càng chẳng phải nhà văn nên tôi chỉ cười mỗi khi có người hỏi tôi viết gì, và cũng chẳng bận tâm người ta nghĩ sao. Nhưng thường thì tôi viết những gì tôi nghĩ bên cạnh nội dung của cuốn sách đang đọc.\n\nRồi đấy, mỗi khi nhìn giá sách nặng thêm một chút, những tờ giấy đầy chữ vo trong sọt rác, cuốn sổ ít trang trống hơn là tôi biết mình đã có thêm những điều quý giá, đã thông thạo những gì đã nghĩ và biết cách sắp xếp, nối những thứ tưởng chừng như chẳng liên quan gì đến nhau, biến chúng trở nên thật sống động. Nhưng cùng lúc đấy, tôi cũng biết rằng, mình lại phải chuẩn bị một khoản tiền nữa cho kẻ nghiện cà phê.\n\nViết lách, đọc sách, xem phim một mình là những cô quạnh, là những khoảng lặng trong tôi, là những phút giây để tôi hiểu hơn về bản thân mình, là thêm trân trọng những gì mình đang có. Yên bình! Nhấc điện thoại lên: “Mẹ ơi, cuối tuần con về nhà!”\n\nHà Nội hôm nay giảm vài độ, hợp với những cái ôm thật chặt, phóng xe qua con phố nhỏ thấy thơm lừng hương bưởi trên vai cô hàng hoa.\n\nCũng Hà Nội, có những ngày như thế…\n\n_ Po _"
+					}
+					
+				
+			
+		
+	};
+</script>
+<script src="/js/lunr.min.js"></script>
+<script src="/js/search.js"></script>
+
+
+  <footer class="footer">
+    
+<div class="container">
+  <div class="row">
+    <div class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3 text-center p-4">
+      <div class="footer-info">
+        <a href="/about">Quy Bookrista</a>
+        &nbsp;&copy;&nbsp;
+        2022
+        &nbsp;&bull;&nbsp;
+        <a href="/about">About</a>
+      </div>
+    </div>
+  </div>
+</div>
+  </footer>
+
+  
+
+
+
+
+
+
+
+
+  
+	  <script src="/js/bootstrap41/jquery-3.3.1.slim.min.js"></script>
+  
+	  <script src="/js/bootstrap41/popper.min.js"></script>
+  
+	  <script src="/js/bootstrap41/bootstrap.min.js"></script>
+  
+
+
+
+
+
+	<!-- Google Analytics -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-136699132-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+	<!-- End Google Analytics -->
+
+</body>
+</html>

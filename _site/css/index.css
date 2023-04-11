@@ -1,0 +1,28 @@
+.alt-quote:nth-child(odd) { background-color: #fff3d5; }
+
+.quote-content { font-size: 1.1rem; font-style: italic; color: #000; line-height: 1.3; text-align: center; }
+.quote-content::before { content: '\f10d  '; font-family: FontAwesome; color: rgba(0, 0, 0, 0.664); /* color: #85b0e5;  */ font-size: 18pt; }
+.quote-content::after { content: '  \f10e'; font-family: FontAwesome; color: rgba(0, 0, 0, 0.664); font-size: 18pt; }
+
+.quote-author { font-size: 0.95rem; font-weight: bold; text-align: center; color: #777; }
+.quote-author a { color: #777; }
+.quote-author a:hover { text-decoration: none; color: #333; }
+.quote-author span { color: #777; }
+
+.quote-more { font-size: 0.8rem; color: #9e9e9e; text-align: center; }
+.quote-more a { color: #778899; }
+.quote-more a:hover { text-decoration: none; color: #444; }
+
+.post-content > blockquote p { font-size: 1.1rem; font-style: italic; color: #000; line-height: 1.3; text-align: center; margin: 2rem 0; }
+.post-content > blockquote p::before { content: '\f10d  '; font-family: FontAwesome; color: rgba(0, 0, 0, 0.664); /* color: #85b0e5;  */ font-size: 18pt; }
+.post-content > blockquote p::after { content: '  \f10e'; font-family: FontAwesome; color: rgba(0, 0, 0, 0.664); font-size: 18pt; }
+
+.me-social { margin-top: 2rem; }
+.me-social hr { width: 30%; }
+.me-social .title { font-size: 1.5rem; font-weight: 600; color: #555; }
+.me-social .item { padding: 1rem; }
+.me-social .item:hover img { transform: scale(1.1); }
+.me-social .item:hover .so-name { color: #4682b4; }
+.me-social .so-img { height: 100px; text-align: center; padding: 10px; }
+.me-social .so-img img { height: 75%; transition: transform .2s; }
+.me-social .so-name { font-size: 1.1rem; font-weight: 600; color: #555; text-align: center; margin-top: -1.5rem; }
